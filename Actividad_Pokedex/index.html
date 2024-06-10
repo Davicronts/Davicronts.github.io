@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <title>Pokédex</title>
+    <meta name="description" content="Pokédex de Kanto." />
+    <link rel=stylesheet href="index.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header id="encabezado">
+        <h1><b>POKÉDEX DE KANTO</b></h1>
+    </header>
+    <section class="buscador-container">
+        <div class="buscador">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre" oninput="filtrarPokemon()">
+            <div class="boton">
+                <img src="imgs/pokemon-4657023_640.webp" alt="Buscador"> </img>
+            </div>
+        </div>
+        <button class="tema-pag" id="boton-tema">
+            <i class='bx bxs-sun'></i>
+            <i class='bx bxs-moon'></i>
+        </button>
+    </section>
+
+    <div class="contenedor">
+        <ol id="pokedex"></ol>
+    </div>
+
+    <script src="funciones.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

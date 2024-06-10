@@ -1,0 +1,440 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    transition: all .7s ease;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+
+body.oscuro {
+    background: rgb(53, 53, 53);
+}
+
+body.oscuro .card {
+    background: rgb(109, 102, 102);
+    color: whitesmoke;
+    border: 2px solid rgb(222, 222, 222);
+    box-shadow: 0px 5px 5px rgb(81, 80, 80);
+}
+
+body.oscuro .boton,
+body.oscuro .card-subtitle-nombre,
+body.oscuro .card-subtitle-peso,
+body.oscuro .card-subtitle-altura,
+body.oscuro .card-subtitle-descripcion,
+body.oscuro .card-subtitle-estadisticas-nombre,
+body.oscuro .card-subtitle-estadisticas,
+body.oscuro .card-subtitle-estadisticas-total,
+body.oscuro .card-subtitle-evoluciones,
+body.oscuro .evolucion-nombre,
+body.oscuro .card-subtitle-tipo,
+body.oscuro .evolucion-nombre-actual,
+body.oscuro .evoTrigger {
+    color: whitesmoke;
+}
+
+#encabezado {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    min-height: 80px;
+    background-color: rgb(182, 41, 41);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-bottom: 6px solid rgb(27, 26, 26);
+    background: linear-gradient(rgba(25, 41, 41, 0.6), rgba(25, 41, 41, 0.6)), url(imgs/img-encabezado.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.boton  {
+    color: black;
+}
+
+.boton-link {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        border: none;
+}
+
+.boton-atras {
+    background-color: #b95959;
+    border: 2px solid black;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+    .boton-atras:after {
+    background-clip: padding-box;
+    background-color: #b95959;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+    .boton-atras:main, .boton-atras:focus {
+    user-select: auto;
+}
+
+    .boton-atras:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+    .boton-atras:disabled {
+    cursor: auto;
+}
+
+    .boton-atras:active:after {
+    border-width: 0 0 0px;
+}
+
+    .boton-atras:active {
+    padding-bottom: 10px;
+}
+
+.tema-pag {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: 3px;
+    position: relative;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.tema-pag i {
+    font-size: 20px;
+    color: yellow;
+    justify-content: center;
+    padding: 8px 4px 0 4px;
+}
+
+.tema-pag::after {
+    content: "";
+    position: absolute;
+    padding: 6px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid thin black;
+    top: 0;
+    left: 0;
+    right: unset;
+    transition: .3s ease all;
+}
+
+.tema-pag.active {
+    background-color: orange;
+
+    &::after {
+        right: 0;
+        left: unset;
+    }
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 10px;
+    list-style: none;
+    border: 2px solid black;
+    box-shadow: 0px 5px 5px rgb(194, 185, 185);
+    border-radius: 20px;
+    padding: 40px;
+    background: linear-gradient(#df9f9f, #bbbedb);
+    color: #222;
+    text-align: center;
+}
+
+.card-image {
+    width: 250px;
+    height: auto;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.card-subtitle-nombre {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.card-subtitle-peso {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 35px;
+}
+
+.card-subtitle-altura {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 5px;
+    border-bottom: 5px dotted rgb(76, 72, 72);
+    padding-bottom: 30px;
+}
+
+.card-subtitle-descripcion {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 35px;
+}
+
+.card-subtitle-estadisticas-nombre {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 5px dotted rgb(76, 72, 72);
+}
+
+.estadisticas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estadistica-item {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.barra-progreso {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.card-subtitle-estadisticas {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin: 5px;
+}
+
+.card-subtitle-estadisticas-total {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 15px;
+}
+
+.card-subtitle-evoluciones {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 5px dotted rgb(76, 72, 72);
+}
+
+.evoluciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.evolucion {
+    display: flex;
+    flex-direction: row;
+    margin: 35px;
+    margin-top: 5px;
+}
+
+.evolucion-nombre {
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+
+.evolucion-nombre-actual {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.evolucion-metodo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.evolucion-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+}
+
+.arrow {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.evoTrigger {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.evolucion-image {
+    width: 150px;
+    height: auto;
+}
+
+.Normal {
+    background-color: #a6a877;
+}
+
+.Planta {
+    background-color: #65c33a;
+}
+
+.Fuego {
+    background-color: #ee7f30;
+}
+
+.Agua {
+    background-color: #678fee;
+}
+
+.Eléctrico {
+    background-color: #f7cf2e;
+}
+
+.Hielo {
+    background-color: #98d5d7;
+}
+
+.Tierra {
+    background-color: #dfbf69;
+}
+
+.Volador {
+    background-color: #a98ff0;
+}
+
+.Veneno {
+    background-color: #a040a0;
+}
+
+.Lucha {
+    background-color: #bf3029;
+}
+
+.Psíquico {
+    background-color: #f65687;
+}
+
+.Siniestro {
+    background-color: #725847;
+}
+
+.Roca {
+    background-color: #b8a137;
+}
+
+.Bicho {
+    background-color: #a8b720;
+}
+
+.Fantasma {
+    background-color: #6e5896;
+}
+
+.Acero {
+    background-color: #b9b7cf;
+}
+
+.Dragón {
+    background-color: #6f38f6;
+}
+
+#pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
