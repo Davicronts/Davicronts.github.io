@@ -66,4 +66,9 @@ img {
     .container {
         grid-template-columns: 1fr;
     }
+
+    .ima {
+        width: 300px;
+        height: auto;
+    }
 }
