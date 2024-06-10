@@ -84,4 +84,8 @@ img {
     .proyecto {
         margin: 10px;
     }
+
+    body {
+        padding: 5px;
+    }
 }
