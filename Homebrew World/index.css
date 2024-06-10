@@ -1,0 +1,650 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto.ttf) format('truetype');
+    /* Especificar un tipo de letra personalizada */
+}
+
+* {
+    box-sizing: border-box;
+    /* Los elementos no crecen más de lo que queramos */
+}
+
+html {
+    scroll-behavior: auto;
+    /* Los enlaces de la misma página son más naturales */
+}
+
+body {
+    font-family: 'Roboto';
+    /* Aplicar el estilo de letra */
+    margin: 0;
+    /* Quitar margen */
+    background-color: rgb(220, 220, 220)
+    /* Color de fondo */
+}
+
+h1 {
+    font-size: 2.7em;
+    /* Tamaño del h1 */
+}
+
+h2 {
+    font-size: 2.4em;
+    /* Tamaño del h2 */
+}
+
+p {
+    font-size: 1.30em;
+    /* Tamaño de los párrafos */
+}
+
+ul {
+    list-style: none;
+    /* Quitar símbolo de las listas */
+}
+
+li {
+    font-size: 1.18em;
+    /* Tamaño de las listas */
+}
+
+button {
+    margin: 10px;
+    /* Margen de los botones */
+    font-size: 1.5em;
+    /* Tamaño de la fuente de los botones */
+    font-weight: bold;
+    /* Texto en negrita */
+    padding: 10px 30px;
+    /* Área de espacio */
+    border-radius: 10px;
+    /* Bordes circulares */
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* Estilo del borde */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra del botón */
+    color: white;
+    /* Color de la fuente */
+    background-color: rgb(210, 105, 30)
+    /* Color de fondo */
+}
+
+button:hover {
+    background-color: rgb(214, 16, 16);
+    /* Color de fondo con el cursor */
+}
+
+a {
+    text-decoration: none;
+    /* Quitar subrayado de los enlaces */
+}
+
+.contenedor {
+    max-width: 1400px;
+    /* Ancho máximo de los contenedores */
+    margin: auto;
+    /* Margen automático */
+}
+
+.color-homebrew {
+    color: blue;
+    /* Color del span */
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    /* Color de fondo */
+}
+
+header .contenedor {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    flex-direction: column;
+    /* Ordenar en columnas */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    min-height: 70px;
+    /* Altura del header */
+    justify-content: space-between;
+    /* El contenido estará en las esquinas */
+    padding: 10px;
+    /* Área de espacio */
+}
+
+header .logo {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+}
+
+header .logo-img {
+    height: 50px;
+    /* Altura de la imagen */
+    margin-right: 10px;
+    /* Margen de la imagen */
+}
+
+header .logo-nombre {
+    margin: 0;
+    /* Quitar margen */
+    padding: 25px 30px;
+    /* Área de espacio */
+    font-weight: bold;
+    /* Texto en negrita */
+    color: blue;
+    /* Color del texto */
+    font-size: 1.8em;
+    /* Tamaño de la fuente */
+}
+
+header nav {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    flex-direction: column;
+    /* Ordenar en columnas */
+    text-align: center;
+    /* Centrar el texto */
+    padding-bottom: 25px;
+    /* Área de espacio hacia abajo */
+}
+
+header .nav-link {
+    padding: 5px 12px;
+    /* Área de espacio */
+    font-weight: bold;
+    /* Texto en negrita */
+    color: black;
+    /* Color del texto */
+    font-size: 1.1em;
+    /* Tamaño de la fuente */
+}
+
+header nav a:hover {
+    color: blue;
+    /* Color con el cursor encima */
+}
+
+#consolas {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    justify-content: center;
+    /* El contenido estará centrado */
+    text-align: center;
+    /* Centrar el texto */
+    flex-direction: column;
+    /* Ordenar en columnas */
+    height: 110vh;
+    /* Altura relativa */
+    background-image: linear-Gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("media/fondo.jpg");
+    /* Imagen de fondo, con un gradiente negro */
+    background-repeat: no-repeat;
+    /* La imagen de fondo no se repite */
+    background-size: cover;
+    /* La imagen ocupa todo el fondo */
+    background-position: center center;
+    /* La imagen estará centrada */
+}
+
+#consolas h1 {
+    color: white;
+    /* Color del texto */
+    padding: 10px;
+    /* Área de espacio */
+}
+
+#consolas .boton-link {
+    padding: 5px 12px;
+    /* Área de espacio */
+    font-weight: bold;
+    /* Texto en negrita */
+    color: black;
+    /* Color del texto */
+}
+
+#consolas button {
+    font-size: 1.75em;
+    /* Tamaño de la fuente */
+}
+
+#consolas nav {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    flex-direction: column;
+    /* Ordenar en columnas */
+}
+
+#homebrew .contenedor {
+    text-align: center;
+    /* Centrar el texto */
+    padding: 200px 12px;
+    /* Área de espacio */
+}
+
+#homebrew a:link {
+    color: royalblue;
+    /* Color del texto */
+    text-decoration-line: underline;
+    /* Subrayado del enlace */
+}
+
+#homebrew a:hover {
+    color: tomato;
+    /* Color con el cursor encima */
+}
+
+#homebrew a:visited {
+    color: blueviolet;
+    /* Color con el enlace visitado */
+}
+
+.img-contenedor {
+    display: none;
+    /* Oculta las imágenes */
+}
+
+#legal {
+    background-color: rgb(30, 30, 30);
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar el texto */
+}
+
+#legal .contenedor {
+    padding: 150px 0px;
+    /* Área de espacio */
+}
+
+#legal h2 {
+    margin-top: 0;
+    /* Quitar margen de arriba */
+}
+
+#legal .texto {
+    margin: 20px;
+    /* Margen del texto */
+}
+
+#legal .legal-link {
+    color: royalblue;
+    /* Color del texto */
+}
+
+#legal a:hover {
+    color: tomato;
+    /* Color con el cursor encima */
+}
+
+#ventajas .contenedor {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    flex-flow: column wrap;
+    /* Mostrar elementos en columnas y pueden saltar de columna */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    padding: 150px 12px;
+    /* Área de espacio */
+}
+
+#ventajas .lista-ventajas {
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    justify-content: center;
+    /* Centrar el contenido horizontalmente */
+}
+
+#ventajas h2 {
+    text-align: center;
+    /* Centrar el texto */
+}
+
+#ventajas li {
+    margin: 15px 0px;
+    /* Margen de las listas */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+#ventajas p {
+    text-align: center;
+    /* Centrar el texto */
+    color: blue;
+    /* Texto en negrita */
+    font-weight: bold;
+    /* Texto en negrita */
+    font-size: 1.8em;
+    /* Tamaño de la fuente */
+}
+
+#contacto {
+    background-color: rgb(30, 30, 30);
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+}
+
+#contacto .contenedor {
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    flex-direction: column;
+    /* Ordenar en columnas */
+    text-align: center;
+    /* Centrar el texto */
+    padding: 100px 30px;
+    /* Área de espacio */
+}
+
+#contacto .texto {
+    padding: 30px;
+    /* Área de espacio */
+}
+
+form {
+    margin: 0 auto;
+    /* Margen del formulario */
+    padding: 10px;
+    /* Área de espacio */
+    border: 1px solid #ccc;
+    /* Estilo del borde */
+    border-radius: 5px;
+    /* Bordes circulares */
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    flex-direction: column;
+    /* Ordenar en columnas */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+}
+
+label {
+    margin-bottom: 15px;
+    /* Área de margen hacia abajo */
+    font-size: 18px;
+    /* Tamaño de la fuente */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+input,
+textarea {
+    padding: 12px 20px;
+    /* Área de espacio */
+    margin-bottom: 20px;
+    /* Área de margen hacia abajo */
+    border: 1px solid #ccc;
+    /* Estilo del borde */
+    border-radius: 4px;
+    /* Bordes circulares */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    /* Color de fondo */
+    color: white;
+    /* Color de la fuente */
+    padding: 12px 20px;
+    /* Área de espacio */
+    border: none;
+    /* Quitar bordes */
+    border-radius: 4px;
+    /* Bordes circulares */
+    cursor: pointer;
+    /* Tipo de cursor */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Color de fondo con cursor */
+}
+
+#contacto .mapa {
+    overflow: hidden;
+    /* Ocultar excedente */
+    padding-bottom: 300px;
+    /* Área de espacio hacia abajo */
+    position: relative;
+    /* Posición del contenedor */
+    height: 0;
+    /* Altura del contenedor */
+}
+
+.mapa iframe{
+    left: 0;
+    /* Sin margen */
+    top: 0;
+    /* Sin margen */
+    height: 100%;
+    /* Altura del vídeo */
+    width: 100%;
+    /* Ancho del vídeo */
+    position: absolute;
+    /* Posición del mapa */
+}
+
+.check {
+    padding: 10px;
+    /* Área de espacio */
+}
+
+.number-consolas {
+    padding: 10px;
+    /* Área de espacio */
+}
+
+.radio-eleccion {
+    text-align: start;
+    /* Centrar el texto al inicio */
+    padding: 15px;
+    /* Área de espacio */
+    margin-left: 60px;
+    /* Margen hacia la izquierda */
+}
+
+textarea {
+    resize: vertical;
+    /* Solo se expande hacia abajo */
+    max-height: 300px;
+    /* Altura máxima de la caja de texto */
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+    /* Color de fondo */
+}
+
+footer p {
+    margin: 0;
+    /* Quitar margen */
+    padding: 12px;
+    /* Área de espacio */
+    color: rgb(100, 100, 100);
+    /* Color del texto */
+}
+
+footer button {
+    margin: 15px;
+    /* Margen del botón */
+    font-size: 1.4em;
+    /* Tamaño de la fuente del botón */
+}
+
+footer .contenedor {
+    height: 110px;
+    /* Altura del footer */
+    justify-content: center;
+    /* Centrar el contenido horizontalmente */
+    display: flex;
+    /* Mostrar elementos en horizontal */
+    text-align: center;
+    /* Centrar el texto */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    flex-direction: column;
+    /* Ordenar en columnas */
+}
+
+footer .arriba {
+    padding-top: 25px;
+    /* Área de espacio hacia arriba */
+}
+
+@media (min-width: 720px) {
+
+    /* Estilos que se aplicarán solo a pantallas mayores de 720px */
+    header {
+        position: fixed;
+        /* Header fijo en la página */
+        width: 100%;
+        /* Ancho del header */
+    }
+
+    header .contenedor {
+        flex-direction: row;
+        /* Ordenar elementos en filas */
+    }
+
+    header nav {
+        flex-direction: row;
+        /* Ordenar elementos en filas */
+        justify-content: space-between;
+        /* El contenido estará en las esquinas */
+        padding-bottom: 0;
+        /* Quitar espacio de abajo */
+        padding-right: 20px;
+        /* Área de espacio */
+    }
+
+    #consolas nav {
+        flex-direction: row;
+        /* Ordenar elementos en filas */
+    }
+
+    #consolas h1 {
+        font-size: 4em;
+        /* Tamaño de la fuente del h1 */
+    }
+
+    #homebrew .contenedor {
+        display: flex;
+        /* Mostrar elementos en horizontal */
+        justify-content: space-evenly;
+        /* El contenido horizontalmente estará separado por espacios iguales */
+        padding: 230px 12px;
+        /* Área de espacio */
+    }
+
+    #homebrew .img-contenedor {
+        display: block;
+        /* Mostrar imagen */
+        background-size: cover;
+        /* La imagen ocupa todo el contenedor */
+        background-position: center center;
+        /* La imagen estará centrada */
+    }
+
+    #homebrew .texto {
+        width: 50%;
+        /* Ancho del texto */
+        max-width: 650px;
+        /* Ancho máximo del texto */
+        text-align: initial;
+        /* El texto estará al principio */
+        padding-left: 150px;
+        /* Área de espacio hacia la izquierda */
+        display: flex;
+        /* Mostrar elementos en horizontal */
+        flex-direction: column;
+        /* Ordenar en columnas */
+        justify-content: center;
+        /* Centrar el contenido horizontalmente */
+    }
+
+
+    #legal .contenedor {
+        padding: 100px 12px;
+        /* Área de espacio */
+    }
+
+    #legal .img-contenedor {
+        display: block;
+        /* Mostrar imagen */
+        background-size: cover;
+        /* La imagen ocupa todo el contenedor */
+        background-position: center center;
+        /* La imagen estará centrada */
+        padding: 20px;
+        /* Área de espacio */
+    }
+
+    #legal h2 {
+        padding: 30px;
+        /* Área de espacio */
+    }
+
+    #legal .img-legal {
+        border-width: 3px;
+        /* Ancho del borde */
+        border-color: sienna;
+        /* Color del borde */
+        border-style: solid;
+        /* Estilo del borde */
+    }
+
+    #legal .texto {
+        width: 80%;
+        /* Ancho del texto */
+        margin: 0 auto;
+        /* Margen del texto */
+        padding: 37px 0;
+        /* Área de espacio */
+    }
+
+    #ventajas .contenedor {
+        flex-flow: row;
+        /* Ordenar elementos en filas */
+    }
+
+    #ventajas .img-contenedor {
+        display: block;
+        /* Mostrar imagen */
+    }
+
+    #ventajas .lista-ventajas {
+        align-items: center;
+        /* Centrar elementos verticalmente */
+    }
+
+    #ventajas h2 {
+        text-align: center;
+        /* Centrar el texto */
+    }
+
+    #contacto .contenedor {
+        max-width: 600px;
+        /* Ancho máximo del contenedor */
+        padding: 100px 125px;
+        /* Área de espacio */
+    }
+
+    footer .contenedor {
+        flex-direction: row;
+        /* Ordenar elementos en filas */
+        justify-content: space-between;
+        /* El contenido estará en las esquinas */
+        align-items: end;
+        /* El contenido estará en el final */
+    }
+
+    footer .arriba {
+        padding-bottom: 17px;
+        /* Área de espacio hacia abajo */
+    }
+}

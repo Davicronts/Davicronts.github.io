@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #FAEBD7;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones button {
+    margin: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(210, 105, 30);
+}
+
+.botones select {
+    padding: 10px 30px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(210, 105, 30);
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+.botones select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+.botones option {
+    font-size: 0.9em;
+}
+
+#personaje {
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+.personaje-info {
+    background-color: #87CEEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    min-width: 450px;
+}
+
+#personaje-nombre {
+    font-size: 2.3em;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+#personaje-anime {
+    font-size: 1.20em;
+    max-width: 300px;
+    margin: 15px;
+}
+
+#personaje-imagen {
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+#personaje-url {
+    margin-top: 20px;
+    text-decoration: none;
+    color: blue;
+    font-size: 1.20em;
+    margin-bottom: 30px;
+}
+
+#personaje-url:hover {
+    text-decoration: underline;
+}
+
+#personaje-video video {
+    margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+    #personaje-video video {
+        width: 350px;
+        height: 200px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #personaje {
+        padding-top: 25px;
+    }
+
+    .personaje-info {
+        min-width: 350px;
+    }
+
+    #personaje-anime {
+        max-width: 195px;
+    }
+
+    #personaje-imagen {
+        max-width: 200px;
+    }
+}

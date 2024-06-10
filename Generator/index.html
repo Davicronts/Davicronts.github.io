@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu Generator</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="botones">
+            <button id="generar">Generar Waifu</button>
+            <select id="seleccionar">
+                <option value="">Seleccionar Waifu</option>
+            </select>
+            <button id="reset">Reiniciar</button>
+        </div>
+    </header>
+    <main>
+        <div id="personaje">
+            <div class="personaje-info">
+                <h2 id="personaje-nombre"></h2>
+                <p id="personaje-anime"></p>
+                <img id="personaje-imagen" src="" alt="Imagen del personaje">
+                <a id="personaje-url" href="" target="_blank">Más información</a>
+            </div>
+            <div id="personaje-video"></div>
+        </div>
+    </main>
+
+    <script type="module" src="personajes.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

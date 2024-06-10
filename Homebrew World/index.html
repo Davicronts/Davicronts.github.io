@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homebrew World</title>
+    <meta name="description" content="El homebrew en tu consola." />
+    <link rel=stylesheet href="index.css" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html" class="logo">
+                <img src="media/logo.png" alt="Logo de la página" class="logo-img">
+                <p class="logo-nombre">Homebrew World</p>
+            </a>
+            <nav>
+                <a href="#homebrew" class="nav-link">¿Qué es el Homebrew?</a>
+                <a href="#legal" class="nav-link">¿Es legal?</a>
+                <a href="#ventajas" class="nav-link">¿Qué ventajas me ofrece?</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="consolas">
+            <h1>Los Mejores Homebrews<br> para tu Consola</h1>
+            <nav>
+                <button><a href="3DS.html" class="boton-link" target="_blank">Nintendo 3DS</a></button>
+                <button><a href="Switch.html" class="boton-link" target="_blank">Nintendo Switch</a></button>
+                <button><a href="Vita.html" class="boton-link" target="_blank">PlayStation Vita</a></button>
+                <button><a href="Play3.html" class="boton-link" target="_blank">PlayStation 3</a></button>
+            </nav>
+        </section>
+
+        <section id="homebrew">
+            <div class="contenedor">
+                <div class="img-contenedor"><img src="media/homebrew.png" alt="homebrew Launcher"></div>
+                <article class="texto">
+                    <h2>¿Qué es el<span class="color-homebrew"> Homebrew</span>?</h2>
+                    <p>Según <a href="https://es.wikipedia.org/wiki/Homebrew" target="_blank">Wikipedia</a>: "Se suele
+                        denominar homebrew (software casero no oficial) a
+                        las aplicaciones y
+                        juegos creados por
+                        programadores aficionados y expertos para cualquier plataforma, generalmente videoconsolas
+                        oficiales."</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="legal">
+            <div class="contenedor">
+                <h2>¿Es legal el homebrew?</h2>
+                <div class="img-contenedor"><img src="media/legalidad.jpg" class="img-legal" alt="Legalidad"></div>
+                <article class="texto">
+                    <p>Desde el punto de vista del fabricante de la consola, sí, sería "ilegal" (se tiene en cuenta que
+                        una empresa no es un ente jurisdiccional); pero desde el punto de vista del desarrollador libre
+                        y del usuario, no lo es.</p>
+                    <p>Esto depende de las leyes que se hayan establecido en la nación, región o comunidad al respecto;
+                        es decir, se dictaminaría como legal o ilegal si está tipificado dentro de un marco jurídico. De
+                        momento no existe ninguna ley específica en la Unión Europea que lo condene.</p>
+                    <p>Para más información, puedes ver una noticia que habla de esto <a
+                            href="https://as.com/meristation/2014/01/24/noticias/1390552440_127231.html"
+                            class="legal-link" target="_blank">Aquí</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="ventajas">
+            <div class="contenedor">
+                <div class="lista-ventajas">
+                    <h2>Ventajas del homebrew</h2>
+                    <ul>
+                        <li>✔️ Ejecutar juegos caseros creados por la comunidad</li>
+                        <li>✔️ Realizar copias de seguridad de tus juegos físicos</li>
+                        <li>✔️ Ejecutar juegos más antiguos a través de emuladores</li>
+                        <li>✔️ Gestionar partidas guardadas fácilmente</li>
+                        <li>✔️ Acceso a funcionalidades extras que ni te imaginas</li>
+                    </ul>
+                    <p>¡Y muchas más!</p>
+                </div>
+                <div class="img-contenedor"><img src="media/ventajas.png" alt="Ventajas del homebrew"></div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+
+                <div class="texto">
+                    <h2>Contacto</h2>
+                    <p>Si necesita ayuda para cualquier consulta o pregunta sobre el tema, no dudes en contactarme.</p>
+                </div>
+
+                <div class="formulario">
+                    <form action="contacto.php" method="post">
+
+                        <label for="nombre">Nombre y Apellidos:</label>
+                        <input type="text" id=nombre placeholder="Nombre y Apellidos" title="Nombre y Apellidos"
+                            name="nombre" required />
+
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" placeholder="usuario@dominio.com"
+                            title="Escribe tu correo electrónico..." name="email" required />
+
+                        <label for="number">¿Con cuántas consolas necesitas ayuda?</label>
+
+                        <div class="number-consolas"><input type="number" id="number" min="1" max="10" step="1"
+                                value="1" title="Consolas" name="Consolas" /></div>
+                        <label for="remoto">¿Necesitas asistencia en remoto?</label>
+
+                        <div class="check"><input type="checkbox" id="remoto" name="remoto" value="remoto" /></div>
+
+                        <label for="experiencia1">¿Tienes experiencia en programación?</label>
+                        <div class="radio-eleccion"><input type="radio" id="experiencia1" name="experiencia"
+                                value="NS/NC" checked />
+                            <label for="experiencia1">Ni idea</label><br />
+                            <input type="radio" id="experiencia2" name="experiencia" value="Me defiendo" /> <label
+                                for="experiencia2">Me
+                                defiendo</label><br />
+                            <input type="radio" id="experiencia3" name="experiencia" value="Experto" /> <label
+                                for="experiencia3">Experto</label>
+                        </div>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea><br />
+
+                        <input type="submit" value="Enviar" />
+                    </form>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d631.749650243255!2d-4.554023316780004!3d36.740404742110144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f10963ce0f3d%3A0x310ae7d4bb2e8f7b!2sCPIFP%20Alan%20Turing!5e1!3m2!1ses!2ses!4v1701349269471!5m2!1ses!2ses"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="arriba">
+                <nav><a href="#consolas" class="nav-footer"> <button>Volver a arriba</button></a></nav>
+            </div>
+            <p>&copy; Homebrew World 2023</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
