@@ -123,6 +123,7 @@ header {
 
     #personaje {
         padding-top: 25px;
+        gap: 0px;
     }
 
     .personaje-info {
@@ -135,5 +136,6 @@ header {
 
     #personaje-imagen {
         max-width: 200px;
+        max-height: 400px;
     }
 }
