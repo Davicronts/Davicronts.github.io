@@ -122,8 +122,9 @@ header {
     }
 
     #personaje {
-        padding-top: 25px;
-        gap: 0px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        gap: 15px;
     }
 
     .personaje-info {
