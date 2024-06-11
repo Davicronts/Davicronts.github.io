@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('personaje-nombre').textContent = personaje.nombre;
         document.getElementById('personaje-anime').textContent = personaje.anime;
         document.getElementById('personaje-imagen').src = personaje.imagen;
-        document.getElementById('personaje-video').innerHTML = `<video width="600" height="400" controls><source src="${personaje.video}" type="video/webm"></video>`;
+        document.getElementById('personaje-video').innerHTML = `<video width="700" height="500" controls><source src="${personaje.video}" type="video/webm"></video>`;
         document.getElementById('personaje-url').href = personaje.url;
         document.getElementById('personaje-url').style.display = 'block';
 

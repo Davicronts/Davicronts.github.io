@@ -41,6 +41,7 @@ header {
     font-weight: bold;
     color: white;
     margin: 10px;
+    text-align: center;
 }
 
 .botones select:focus {
@@ -58,11 +59,11 @@ header {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    gap: 30px;
+    justify-content: center;
+    margin: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 50px;
 }
 
 .personaje-info {
