@@ -89,6 +89,7 @@ header {
 
 #personaje-imagen {
     max-width: 300px;
+    max-height: 500px;
     margin-top: 20px;
     border-radius: 50px;
 }
