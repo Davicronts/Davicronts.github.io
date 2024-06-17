@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('personaje-imagen').src = personaje.imagen;
         document.getElementById('personaje-video').innerHTML = `<span class="titulo-video">${personaje.tituloVideo}</span><video width="700" height="500" preload="auto" controls><source src="${personaje.video}" type="video/webm"></video>`;
         document.getElementById('personaje-episodio').innerHTML = `<span class="titulo-episodio">Episodio 1</span><iframe width="700" height="500" src="${personaje.episodio}" allowfullscreen></iframe>`;
-        document.getElementById('personaje-trailer').innerHTML = `<iframe width="700" height="500" src="${personaje.trailer}" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        document.getElementById('personaje-trailer').innerHTML = `<span class="titulo-trailer">Trailer</span><iframe width="700" height="500" src="${personaje.trailer}" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
         document.getElementById('personaje-descripcion').textContent = personaje.descripcion;
         document.getElementById('personaje-url').href = personaje.url;
         document.getElementById('personaje-url').style.display = 'block';

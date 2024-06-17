@@ -151,13 +151,15 @@ input[type="radio"]:checked+span {
 }
 
 #personaje-video,
-#personaje-episodio {
+#personaje-episodio,
+#personaje-trailer {
     display: flex;
     flex-direction: column;
 }
 
 .titulo-video,
-.titulo-episodio {
+.titulo-episodio,
+.titulo-trailer {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 15px;
@@ -229,7 +231,8 @@ input[type="radio"]:checked+span {
     }
 
     .titulo-video,
-    .titulo-episodio {
+    .titulo-episodio,
+    .titulo-trailer {
         font-size: 1.2em;
         font-weight: bold;
         margin-bottom: 12px;
