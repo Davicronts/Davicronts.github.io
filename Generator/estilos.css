@@ -207,7 +207,7 @@ input[type="radio"]:checked+span {
     }
 
     .personaje-info {
-        min-width: 350px;
+        max-width: 300px;
     }
 
     #personaje-anime {
@@ -215,8 +215,8 @@ input[type="radio"]:checked+span {
     }
 
     #personaje-descripcion {
-        font-size: 1.18em;
-        max-width: 280px;
+        font-size: 1.16em;
+        max-width: 260px;
     }
 
     #personaje-imagen {
