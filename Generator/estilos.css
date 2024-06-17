@@ -8,20 +8,50 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
     margin: 0;
     background-color: #FAEBD7;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+p {
+    margin: 0;
 }
 
-.botones button {
-    margin: 10px;
+.encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #008B8B;
+    color: white;
+    border-bottom: 6px solid rgb(27, 26, 26);
+    padding: 10px;
+}
+
+.opciones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(210, 105, 30);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 270px;
+    padding: 10px;
+}
+
+input[type="radio"]:checked+span {
+    font-weight: bold;
+}
+
+.opciones {
+    font-size: 1.2em;
+}
+
+.opcion {
+    margin: 5px;
+}
+
+.encabezado button {
     font-size: 1.4em;
     font-weight: bold;
     padding: 10px 30px;
@@ -31,7 +61,7 @@ header {
     background-color: rgb(210, 105, 30);
 }
 
-.botones select {
+.encabezado select {
     padding: 10px 30px;
     padding-right: 20px;
     border: none;
@@ -40,30 +70,33 @@ header {
     font-size: 1.4em;
     font-weight: bold;
     color: white;
-    margin: 10px;
     text-align: center;
 }
 
-.botones select:focus {
+.encabezado select:focus {
     border-color: #0066cc;
     box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
     outline: none;
 }
 
-.botones option {
+.encabezado option {
     font-size: 0.9em;
 }
 
 #personaje {
-    display: none;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
-    margin: 15px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    gap: 50px;
+    margin: 10px;
+}
+
+.personaje-fila {
+    display: flex;
+    align-items: center;
+    gap: 350px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .personaje-info {
@@ -71,8 +104,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 50px;
-    min-width: 450px;
+    width: 450px;
 }
 
 #personaje-nombre {
@@ -90,41 +124,86 @@ header {
 #personaje-imagen {
     max-width: 300px;
     max-height: 500px;
+    min-height: 300px;
     margin-top: 20px;
     border-radius: 50px;
 }
 
-#personaje-url {
-    margin-top: 20px;
+#personaje-descripcion {
+    font-size: 1.20em;
+    margin-top: 30px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+#personaje-url,
+#personaje-url-db {
+    margin-top: 10px;
     text-decoration: none;
     color: blue;
     font-size: 1.20em;
     margin-bottom: 30px;
 }
 
-#personaje-url:hover {
+#personaje-url:hover,
+#personaje-url-db:hover {
     text-decoration: underline;
 }
 
-#personaje-video video {
-    margin-top: 20px;
+#personaje-video,
+#personaje-episodio {
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width: 720px) {
-    #personaje-video video {
+.titulo-video,
+.titulo-episodio {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#personaje-video video,
+#personaje-episodio iframe,
+#personaje-trailer iframe {
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+}
+
+@media (max-width: 1400px) {
+
+    #personaje-video video,
+    #personaje-episodio iframe,
+    #personaje-trailer iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    .personaje-fila {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #personaje-video video,
+    #personaje-episodio iframe,
+    #personaje-trailer iframe {
         width: 350px;
         height: 200px;
     }
 
-    .botones {
+    .encabezado {
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
 
-    #personaje {
-        padding-top: 15px;
-        padding-bottom: 30px;
-        gap: 15px;
+    .personaje-fila {
+        flex-direction: column;
+        place-content: center;
+        gap: 50px;
     }
 
     .personaje-info {
@@ -135,8 +214,20 @@ header {
         max-width: 195px;
     }
 
+    #personaje-descripcion {
+        font-size: 1.18em;
+        max-width: 280px;
+    }
+
     #personaje-imagen {
-        max-width: 200px;
-        max-height: 400px;
+        max-width: 220px;
+        max-height: 420px;
+    }
+
+    .titulo-video,
+    .titulo-episodio {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 12px;
     }
 }
