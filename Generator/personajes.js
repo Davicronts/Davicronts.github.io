@@ -5,7 +5,11 @@ const personajesFemeninos = [
         imagen: "media/img/1.webp",
         video: "https://v.animethemes.moe/ReZero-OP2.webm",
         url: "https://rezero.fandom.com/wiki/Rem",
-        descripcion: "Una maid demoníaca con habilidades increíbles y un corazón de oro. ¡Cuidado con su Morning Star!"
+        descripcion: "La sirvienta más adorable y letal del multiverso. Puede derretir corazones y aplastar enemigos con la misma facilidad.",
+        tituloVideo: "Opening - Paradisus-Paradoxum",
+        episodio: "https://uqload.to/embed-0pbqlenlretw.html",
+        trailer: "https://www.youtube.com/embed/Slz_rahWp6Y?si=00omRhwhcmPCpT7E",
+        db: "https://anidb.net/anime/11370"
     },
     {
         nombre: "Megumin",
@@ -13,7 +17,11 @@ const personajesFemeninos = [
         imagen: "media/img/2.jpg",
         video: "https://v.animethemes.moe/KonosubaS2-OP1.webm",
         url: "https://konosuba.fandom.com/wiki/Megumin",
-        descripcion: "Una hechicera obsesionada con la magia de explosiones. ¿Qué puede salir mal con una explosión diaria?"
+        descripcion: "Una hechicera obsesionada con la magia de explosiones. ¿Qué puede salir mal con una explosión diaria?",
+        tituloVideo: "Opening - TOMORROW",
+        episodio: "https://uqload.to/embed-k2dtfqsuo212.html",
+        trailer: "https://www.youtube.com/embed/NU87y-38glA?si=6OmOVWpClF-UZJxm",
+        db: "https://anidb.net/anime/11261"
     },
     {
         nombre: "Karyl",
@@ -21,7 +29,11 @@ const personajesFemeninos = [
         imagen: "media/img/3.jpg",
         video: "https://v.animethemes.moe/PrincessConnectReDiveS2-OP1-NCBD1080.webm",
         url: "https://princess-connect.fandom.com/wiki/Karyl",
-        descripcion: "Una gata mágica con un toque tsundere. Puede ser gruñona, pero en el fondo es un amor."
+        descripcion: "Una gata hechicera con un toque tsundere. Adora la comida tanto como sus hechizos.",
+        tituloVideo: "Opening - Lost Princess",
+        episodio: "https://uqload.to/embed-wdly1nijshkt.html",
+        trailer: "https://www.youtube.com/embed/5NltMe8vX1o?si=nrHiUfHl7fr-z5gN",
+        db: "https://anidb.net/anime/14690"
     },
     {
         nombre: "Aqua",
@@ -29,15 +41,23 @@ const personajesFemeninos = [
         imagen: "media/img/4.jpg",
         video: "https://v.animethemes.moe/Konosuba-OP1.webm",
         url: "https://konosuba.fandom.com/wiki/Aqua",
-        descripcion: "La diosa de la desgracia y el drama. Sus habilidades son tan útiles como una pantalla de loading."
+        descripcion: "La diosa más inútil y divertida que jamás conocerás. Con un ego del tamaño de su ineptitud divina, ilumina el mundo con sus desastres y desgracias.",
+        tituloVideo: "Opening - Fantastic Dreamer",
+        episodio: "https://uqload.to/embed-k2dtfqsuo212.html",
+        trailer: "https://www.youtube.com/embed/NU87y-38glA?si=6OmOVWpClF-UZJxm",
+        db: "https://anidb.net/anime/11261"
     },
     {
         nombre: "Mai Sakurajima",
         anime: "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
         imagen: "media/img/5.jpg",
-        video: "https://v.animethemes.moe/Aobuta-OP1-NCBD1080.webm",
+        video: "https://v.animethemes.moe/Aobuta-OP1-Lyrics.webm",
         url: "https://aobuta.fandom.com/wiki/Mai_Sakurajima",
-        descripcion: "Una actriz famosa que a veces desaparece de la vista. No, no es un truco de magia."
+        descripcion: "Una actriz famosa que a veces desaparece de la vista. No, no es un truco de magia.",
+        tituloVideo: "Opening - Kimi no Sei",
+        episodio: "https://uqload.to/embed-j8zekve1clds.html",
+        trailer: "https://www.youtube.com/embed/o0TZj_d3Yfg?si=kIYeWw6Asncr4jHn",
+        db: "https://anidb.net/anime/13900"
     },
     {
         nombre: "Roxy Migurdia",
@@ -308,12 +328,12 @@ const personajesFemeninos = [
         anime: "[Oshi no Ko]",
         imagen: "media/img/40.jpg",
         video: "https://v.animethemes.moe/OshiNoKo-OP1-NCBD1080.webm",
+        url: "https://oshinoko.fandom.com/wiki/Ai_Hoshino",
+        descripcion: "Una idol cuya sonrisa puede derretir icebergs y cuyo carisma brilla como una supernova.",
         tituloVideo: "Opening - Idol",
         episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzQ3NG9zNjNjd3Yybg==",
         trailer: "https://www.youtube.com/embed/gKWEUJ4r5do?si=zqAPIQ55SnRCLbWT",
-        url: "https://oshinoko.fandom.com/wiki/Ai_Hoshino",
-        db: "https://anidb.net/anime/17449",
-        descripcion: "Una idol cuya sonrisa puede derretir icebergs y cuyo carisma brilla como una supernova. Con un estilo inigualable, es una estrella que ilumina todo a su alrededor."
+        db: "https://anidb.net/anime/17449"
     }
 ];
 
