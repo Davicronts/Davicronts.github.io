@@ -65,7 +65,11 @@ const personajesFemeninos = [
         imagen: "media/img/6.webp",
         video: "https://v.animethemes.moe/MushokuTenseiS2-OP1-NCBD1080.webm",
         url: "https://mushokutensei.fandom.com/wiki/Roxy_Migurdia",
-        descripcion: "Una poderosa maga que también es una excelente profesora. ¡Prepárate para aprender magia con estilo!"
+        descripcion: "Una hechicera pequeña pero poderosa, capaz de lanzar grandes hechizos y dar sabias lecciones. Su estatura no impide que su magia y su carácter sean gigantes.",
+        tituloVideo: "Opening - Spiral",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9kb29kc3RyZWFtLmNvbS9lL3owcGF6bmpkOWtvdw==",
+        trailer: "https://www.youtube.com/embed/k5VxfJpzy1Q?si=ixAwqhlNonIRQSLj",
+        db: "https://anidb.net/anime/14758"
     },
     {
         nombre: "Sayu Ogiwara",
@@ -73,7 +77,11 @@ const personajesFemeninos = [
         imagen: "media/img/7.png",
         video: "https://v.animethemes.moe/Higehiro-OP1-NCBD1080.webm",
         url: "https://higehiro.fandom.com/wiki/Sayu_Ogiwara",
-        descripcion: "Una chica de secundaria con una historia complicada, pero siempre encuentra la forma de sonreír."
+        descripcion: "Una chica de secundaria con una historia complicada, pero siempre encuentra la forma de sonreír.",
+        tituloVideo: "Opening - Omoide Shiritori",
+        episodio: "https://www.burstcloud.co/embed/75e24f68292a55070f5d6fade5b84ec1dac14a1737a33cd8bb6fc2df996bffb2/Hige 1.mp4",
+        trailer: "https://www.youtube.com/embed/nFljVg8xELU?si=tb8MhefgIb1paVS5",
+        db: "https://anidb.net/anime/15332"
     },
     {
         nombre: "Kaguya Shinomiya",
@@ -81,7 +89,11 @@ const personajesFemeninos = [
         imagen: "media/img/8.jpg",
         video: "https://v.animethemes.moe/KaguyaSamaWaKokurasetaiMovie-OP1.webm",
         url: "https://kaguyasama-wa-kokurasetai.fandom.com/wiki/Kaguya_Shinomiya",
-        descripcion: "Una genio con un corazón de piedra... hasta que se trata de amor. ¡Las estrategias románticas nunca fueron tan divertidas!"
+        descripcion: "Una genio del amor y las estrategias. Con su inteligencia de supervillana y su torpeza emocional, convierte cada confesión en una guerra hilarante.",
+        tituloVideo: "Opening - Love is Show",
+        episodio: "https://uqload.to/embed-zui6b6gy8zwz.html",
+        trailer: "https://www.youtube.com/embed/IwpJJiQkZzI?si=ZWDoixqx9agn3DmY",
+        db: "https://anidb.net/anime/14111"
     },
     {
         nombre: "Chika Fujiwara",
@@ -89,7 +101,11 @@ const personajesFemeninos = [
         imagen: "media/img/9.png",
         video: "https://v.animethemes.moe/KaguyaSamaWaKokurasetai-ED2-NCBD1080.webm",
         url: "https://kaguyasama-wa-kokurasetai.fandom.com/wiki/Chika_Fujiwara",
-        descripcion: "La secretaria del consejo estudiantil y maestra del caos. ¡Nunca un entrenamiento fue tan peculiar!"
+        descripcion: "El caos en forma de estudiante. Con su energía desbordante y ocurrencias locas, desarma cualquier plan serio con su torpeza encantadora.",
+        tituloVideo: "Ending - Chikatto Chika Chika♡",
+        episodio: "https://uqload.to/embed-zui6b6gy8zwz.html",
+        trailer: "https://www.youtube.com/embed/IwpJJiQkZzI?si=ZWDoixqx9agn3DmY",
+        db: "https://anidb.net/anime/14111"
     },
     {
         nombre: "Albedo",
@@ -97,7 +113,11 @@ const personajesFemeninos = [
         imagen: "media/img/10.webp",
         video: "https://v.animethemes.moe/OverlordS3-OP1-NCBD1080.webm",
         url: "https://overlordmaruyama.fandom.com/wiki/Albedo",
-        descripcion: "La guardiana de la Gran Tumba de Nazarick, tan leal como letal. ¡Cuidado con sus sentimientos por su maestro!"
+        descripcion: "La guardiana más leal y enamorada de su señor, con un toque de obsesión divertida. Con su armadura imponente y sus celos desmedidos, combina el peligro y el humor en un solo paquete.",
+        tituloVideo: "Opening - VORACITY",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly92b2Uuc3gvZS9yNnc4cXM5ZHBtcm0=",
+        trailer: "https://www.youtube.com/embed/RuNAPPcjDr4?si=jGkNWkE-S7Fm58a4",
+        db: "https://anidb.net/anime/10816"
     },
     {
         nombre: "Ai Ohto",
@@ -105,7 +125,11 @@ const personajesFemeninos = [
         imagen: "media/img/11.jpg",
         video: "https://v.animethemes.moe/WonderEggPriority-OP1-NCBD1080.webm",
         url: "https://wonder-egg-priority.fandom.com/wiki/Ai_Ohto",
-        descripcion: "Una joven aventurera en un mundo de sueños. Sus misterios son tan profundos como sus amigos."
+        descripcion: "Una joven aventurera en un mundo de sueños. Sus misterios son tan profundos como sus amigos.",
+        tituloVideo: "Opening - Sudachi no Uta",
+        episodio: "https://uqload.to/embed-9t0hsdc30jca.html",
+        trailer: "https://www.youtube.com/embed/_TpTn3o-_Yk?si=cGsNA34LMR26vxcd",
+        db: "https://anidb.net/anime/15772"
     },
     {
         nombre: "Megumi Kato",
