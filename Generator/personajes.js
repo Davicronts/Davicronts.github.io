@@ -137,7 +137,11 @@ const personajesFemeninos = [
         imagen: "media/img/12.jpg",
         video: "https://v.animethemes.moe/Saekano-OP1.webm",
         url: "https://saekano.fandom.com/wiki/Megumi_Kato",
-        descripcion: "La heroína más normal del mundo, hasta que empieza a brillar. ¡A veces, menos es más!"
+        descripcion: "La heroína más normal del mundo, con una personalidad tan promedio, que logra robarse el protagonismo sin siquiera intentarlo.",
+        tituloVideo: "Opening - Kimiiro Signal",
+        episodio: "https://uqload.to/embed-ojjt3api4sq1.html",
+        trailer: "https://www.youtube.com/embed/gsZb9-SRDDI?si=edLITLuXp7NiIsnZ",
+        db: "https://anidb.net/anime/10538"
     },
     {
         nombre: "Yotsuba Nakano",
@@ -145,7 +149,11 @@ const personajesFemeninos = [
         imagen: "media/img/13.webp",
         video: "https://v.animethemes.moe/GotoubunNoHanayomeSpecials-OP1.webm",
         url: "https://5hanayome.fandom.com/wiki/Yotsuba_Nakano",
-        descripcion: "Energía pura y optimismo en persona. Siempre lista para ayudar, aunque a veces se meta en líos."
+        descripcion: "La atlética y enérgica de las hermanas, siempre dispuesta a ayudar y con una sonrisa eterna. Su entusiasmo y espíritu deportivo la hacen la chispa del grupo, aunque a veces sus buenas intenciones causan más problemas de los que se resuelven.",
+        tituloVideo: "Opening - Gotoubun no Mirai",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
+        trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",
+        db: "https://anidb.net/anime/14247"
     },
     {
         nombre: "Nino Nakano",
@@ -153,7 +161,11 @@ const personajesFemeninos = [
         imagen: "media/img/15.png",
         video: "https://v.animethemes.moe/GotoubunNoHanayomeSpecials-ED1.webm",
         url: "https://5hanayome.fandom.com/wiki/Nino_Nakano",
-        descripcion: "Fuerte, independiente y con un toque tsundere. No te dejes engañar por su actitud dura."
+        descripcion: "La fuerte, independiente y tsundere de las hermanas, no te dejes engañar por su actitud dura. Su amor por la comida y su espíritu luchador la hacen tan memorable como temible.",
+        tituloVideo: "Ending - Takaramono",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
+        trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",
+        db: "https://anidb.net/anime/14247"
     },
     {
         nombre: "Ichika Nakano",
@@ -161,7 +173,11 @@ const personajesFemeninos = [
         imagen: "media/img/16.webp",
         video: "https://v.animethemes.moe/GotoubunNoHanayomeS2-OP1-NCBD1080.webm",
         url: "https://5hanayome.fandom.com/wiki/Ichika_Nakano",
-        descripcion: "La mayor de las quintillizas y aspirante a actriz. Su madurez y travesuras son un combo ganador."
+        descripcion: "La mayor de las hermanas y aspirante a actriz, con su astucia y encantos, es la hermana mayor que siempre tiene un plan... aunque no siempre sea el mejor.",
+        tituloVideo: "Opening - Gotoubun no Katachi",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
+        trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",
+        db: "https://anidb.net/anime/14247"
     },
     {
         nombre: "Miku Nakano",
@@ -169,15 +185,23 @@ const personajesFemeninos = [
         imagen: "media/img/14.jpg",
         video: "https://v.animethemes.moe/EigaGotoubunNoHanayome-OP1.webm",
         url: "https://5hanayome.fandom.com/wiki/Miku_Nakano",
-        descripcion: "La más reservada de las hermanas, pero con una pasión secreta. ¡Cuidado, puede derretir tu corazón!"
+        descripcion: "La más reservada de las hermanas, pero con una pasión secreta. No subestimes su determinación.",
+        tituloVideo: "Opening - Gotoubun no Kiseki",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
+        trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",
+        db: "https://anidb.net/anime/14247"
     },
     {
         nombre: "Itsuki Nakano",
         anime: "Go-toubun no Hanayome",
         imagen: "media/img/17.jpg",
-        video: "https://v.animethemes.moe/GotoubunNoHanayome-OP1-NCBD1080.webm",
+        video: "https://v.animethemes.moe/GotoubunNoHanayome-ED1.webm",
         url: "https://5hanayome.fandom.com/wiki/Itsuki_Nakano",
-        descripcion: "La dedicada estudiante y amante de la comida. Siempre tiene un snack a mano."
+        descripcion: "La dedicada estudiante y amante de la comida de las hermanas, siempre tiene un snack a mano.",
+        tituloVideo: "Ending - Sign",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
+        trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",
+        db: "https://anidb.net/anime/14247"
     },
     {
         nombre: "Sumi Sakurasawa",
@@ -185,7 +209,11 @@ const personajesFemeninos = [
         imagen: "media/img/18.jpg",
         video: "https://v.animethemes.moe/Kanokari-OP1-NCBD1080.webm",
         url: "https://kanojo-okarishimasu.fandom.com/wiki/Sumi_Sakurasawa",
-        descripcion: "La tímida y adorable chica que te hará sonreír. ¡Su ternura es contagiosa!"
+        descripcion: "La chica más tímida y adorable que podrías alquilar. Su torpeza encantadora y su esfuerzo por superar su timidez la hacen una explosión de ternura.",
+        tituloVideo: "Opening - Centimeter",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzd4azB5OXlnMWF3bA==",
+        trailer: "https://www.youtube.com/embed/jZFEtc3CKHs?si=bvpuU8On6oplXhtp",
+        db: "https://anidb.net/anime/15299"
     },
     {
         nombre: "Frieren",
@@ -193,7 +221,11 @@ const personajesFemeninos = [
         imagen: "media/img/19.jpg",
         video: "https://v.animethemes.moe/SousouNoFrieren-OP1-NCBD1080.webm",
         url: "https://frieren.fandom.com/wiki/Frieren",
-        descripcion: "Una elfa maga con un pasado heroico. Su calma y sabiduría son tan profundas como su longevidad."
+        descripcion: "Una elfa maga con un pasado heroico. Su calma y sabiduría son tan profundas como su longevidad.",
+        tituloVideo: "Opening - Yuusha",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL3Y2MzBvcmRoY2VhOQ==",
+        trailer: "https://www.youtube.com/embed/qgQunxD0qCk?si=aq7CJ5LI4Xk7oU_y",
+        db: "https://anidb.net/anime/17617"
     },
     {
         nombre: "Yukino Yukinoshita",
@@ -377,6 +409,18 @@ const personajesMasculinos = [
         video: "https://v.animethemes.moe/SteinsGate-ED1.webm",
         url: "https://steins-gate.fandom.com/wiki/Rintaro_Okabe",
         descripcion: "El autoproclamado 'científico loco' con un amor por los gadgets. ¡Su risa maníaca es inconfundible!"
+    },
+    {
+        nombre: "Fuutarou Uesugi",
+        anime: "Go-toubun no Hanayome",
+        imagen: "media/img/43.jpg",
+        video: "https://v.animethemes.moe/GotoubunNoHanayome-OP1-NCBD1080.webm",
+        url: "https://5hanayome.fandom.com/wiki/Futaro_Uesugi",
+        descripcion: "El genio estudioso que se convierte en tutor de cinco quintillizas, equilibrando sus problemas financieros con las locuras de su nuevo trabajo.",
+        tituloVideo: "Opening - Gotoubun no Kimochi",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
+        trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",
+        db: "https://anidb.net/anime/14247"
     }
 ];
 
