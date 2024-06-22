@@ -533,7 +533,7 @@ const personajesFemeninos = [
         imagen: "media/img/68.jpg",
         video: "https://v.animethemes.moe/Gate-OP1.webm",
         url: "https://gate.fandom.com/wiki/Rory_Mercury",
-        descripcion: "La semidiosa gótica con una hacha tan grande como su personalidad. Con su apariencia de niña y su edad milenaria, adora el caos y el combate tanto como un buen chisme.",
+        descripcion: "Una semidiosa gótica con una hacha tan grande como su personalidad. Con su apariencia de niña y su edad milenaria, adora el caos y el combate tanto como un buen chisme.",
         tituloVideo: "Opening - GATE: Sore wa Akatsuki no you ni",
         episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2c0dnZ6aW96a2dxdQ==",
         trailer: "https://www.youtube.com/embed/IulCg2hnu54?si=7cv2JNeIvMfra4X9",

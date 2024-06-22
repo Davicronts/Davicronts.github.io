@@ -173,7 +173,7 @@ const personajesMasculinos = [
         imagen: "media/img/57.jpg",
         video: "https://v.animethemes.moe/BokuDakeGaInaiMachi-ED1.webm",
         url: "https://bokudakegainaimachi.fandom.com/wiki/Satoru_Fujinuma",
-        descripcion: "El mangaka con el poder más incómodo del mundo: retroceder en el tiempo para evitar desastres. Entre fracasos laborales y salvar el día, su vida es un enredo temporal constante.",
+        descripcion: "El mangaka con el poder más incómodo del mundo. Entre fracasos laborales y salvar el día, su vida es un enredo temporal constante.",
         tituloVideo: "Ending - Sore wa Chiisana Hikari no You na",
         episodio: "https://uqload.to/embed-64yjnq1dymp9.html",
         trailer: "https://www.youtube.com/embed/TZzMOC-4k6M?si=2u9ZFP4zjV5xBHVz",

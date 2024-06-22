@@ -11,8 +11,10 @@
 
 <body>
     <header class="encabezado">
-        
+
         <button id="generar">Generar personaje</button>
+
+        <button id="listado">Listado de personajes</button>
 
         <select id="seleccionar">
             <option value="">Seleccionar personaje</option>
@@ -37,9 +39,20 @@
                 <span class="opciones">Solo Husbandos</span>
             </label>
         </div>
+
+
     </header>
 
     <main>
+
+        <div id="contenedor-grid">
+            <div id="busqueda-container">
+                <input type="text" id="busqueda" placeholder="Buscar por nombre o anime...">
+                <div id="mensaje-busqueda-vacia">No se encontraron resultados.</div>
+            </div>
+            <div id="grid-personajes"></div>
+        </div>
+
         <div id="personaje">
 
             <div class="personaje-fila">
@@ -53,7 +66,7 @@
                 </div>
                 <div id="personaje-trailer"></div>
             </div>
-    
+
             <div class="personaje-fila">
                 <div id="personaje-video"></div>
                 <div id="personaje-episodio"></div>
@@ -61,9 +74,10 @@
         </div>
     </main>
 
-    
+
     <script type="module" src="personajesFemeninos.js"></script>
     <script type="module" src="personajesMasculinos.js"></script>
+    <script type="module" src="funciones.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 
