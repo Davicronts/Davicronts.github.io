@@ -1,4 +1,5 @@
-import { personajesFemeninos, personajesMasculinos } from './personajes.js';
+import { personajesFemeninos } from './personajesFemeninos.js';
+import { personajesMasculinos } from './personajesMasculinos.js';
 
 document.addEventListener('DOMContentLoaded', function () {
 
