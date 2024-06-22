@@ -24,7 +24,7 @@ export function ordenarArrayPorNombre(array) {
     return array.sort((a, b) => a.nombre.localeCompare(b.nombre));
 }
 
-export function mostrarPersonaje(indice, personajes) {
+export function mostrarPersonaje(indice, personajes, seleccionar = null) {
     ocultarDetallesPersonaje();
 
     const personaje = personajes[indice];
@@ -46,6 +46,10 @@ export function mostrarPersonaje(indice, personajes) {
     document.getElementById('personaje').scrollIntoView({
         block: 'start'
     });
+
+    if (seleccionar) {
+        seleccionar.value = indice;
+    }
 }
 
 export function ocultarDetallesPersonaje() {
@@ -66,6 +70,8 @@ export function ocultarDetallesPersonaje() {
 
 export function mostrarListadoPersonajes(personajes) {
     ocultarDetallesPersonaje();
+    
+    document.getElementById('seleccionar').value = "";
 
     const contenedorGrid = document.getElementById('contenedor-grid');
     const gridPersonajes = document.getElementById('grid-personajes');
@@ -81,7 +87,7 @@ export function mostrarListadoPersonajes(personajes) {
         `;
 
         item.addEventListener('click', function () {
-            mostrarPersonaje(indice, personajes);
+            mostrarPersonaje(indice, personajes, document.getElementById('seleccionar'));
         });
 
         gridPersonajes.appendChild(item);
@@ -112,7 +118,7 @@ export function filtrarPersonajes(textoBusqueda, personajes) {
                 <p>${personaje.anime}</p>
             `;
             item.addEventListener('click', function () {
-                mostrarPersonaje(personajes.indexOf(personaje), personajes);
+                mostrarPersonaje(personajes.indexOf(personaje), personajes, document.getElementById('seleccionar'));
             });
 
             gridPersonajes.appendChild(item);

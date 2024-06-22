@@ -11,7 +11,6 @@ import {
 
 document.addEventListener('DOMContentLoaded', function () {
     let personajes = actualizarPersonajes('opcion1', personajesFemeninos, personajesMasculinos);
-    console.log(personajes);
     const seleccionar = document.getElementById('seleccionar');
     const radioButtons = document.querySelectorAll('input[name="opcion"]');
 
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('generar').addEventListener('click', function () {
         const indiceAleatorio = Math.floor(Math.random() * personajes.length);
-        mostrarPersonaje(indiceAleatorio, personajes);
+        mostrarPersonaje(indiceAleatorio, personajes, seleccionar);
     });
 
     document.getElementById('seleccionar').addEventListener('change', function () {
