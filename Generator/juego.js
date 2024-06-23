@@ -1,14 +1,27 @@
-// Genera una pregunta con opciones aleatorias
-export function generarPregunta(personajes) {
+export function generarPregunta(personajes, personajesFemeninos, personajesMasculinos, genero) {
+    
+    if (genero === 'masculino') {
+        personajes = personajesMasculinos;
+    } else if (genero === 'femenino') {
+        personajes = personajesFemeninos;
+    } else {
+        personajes = Math.random() < 0.5 ? personajesMasculinos : personajesFemeninos;
+    }
+
     const tiposPreguntas = [1, 2, 3, 4, 5, 6]; // Diferentes tipos de preguntas
     const tipoPregunta = tiposPreguntas[Math.floor(Math.random() * tiposPreguntas.length)]; // Selecciona un tipo de pregunta al azar
     const personajeCorrecto = personajes[Math.floor(Math.random() * personajes.length)]; // Selecciona un personaje correcto al azar
     let opciones = [personajeCorrecto]; // Inicializa las opciones con el personaje correcto
 
-    // Agrega opciones adicionales asegurando que sean únicas
+    // Función para verificar si un personaje pertenece a un anime ya presente en las opciones
+    const personajePerteneceAAnimeExistente = (personaje) => {
+        return opciones.some(opcion => opcion.anime === personaje.anime);
+    };
+
+    // Agrega opciones adicionales asegurando que sean únicas y de distintos animes
     while (opciones.length < 4) {
         const personajeAleatorio = personajes[Math.floor(Math.random() * personajes.length)];
-        if (!opciones.includes(personajeAleatorio)) {
+        if (!opciones.includes(personajeAleatorio) && !personajePerteneceAAnimeExistente(personajeAleatorio)) {
             opciones.push(personajeAleatorio);
         }
     }
@@ -16,6 +29,7 @@ export function generarPregunta(personajes) {
     opciones = opciones.sort(() => Math.random() - 0.5); // Mezcla las opciones
     return { tipoPregunta, personajeCorrecto, opciones }; // Retorna el tipo de pregunta, el personaje correcto y las opciones
 }
+
 
 // Muestra una pregunta en el contenedor proporcionado y configura el callback para manejar la respuesta
 export function mostrarPregunta(pregunta, contenedor, callback) {
@@ -69,13 +83,14 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
 }
 
 // Inicia el juego con un conjunto de personajes
-export function iniciarJuego(personajes) {
+export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) {
     const contenedorJuego = document.getElementById('contenedor-juego');
     contenedorJuego.style.display = 'block'; // Asegura que el contenedor del juego sea visible
 
+    let personajes = [];
     let preguntas = [];
     for (let i = 0; i < 10; i++) {
-        preguntas.push(generarPregunta(personajes)); // Genera 10 preguntas
+        preguntas.push(generarPregunta(personajes, personajesFemeninos, personajesMasculinos, genero)); // Genera 10 preguntas
     }
 
     let preguntaActual = 0; // Índice de la pregunta actual
@@ -113,7 +128,7 @@ export function finalizarJuego(puntuacion) {
         <button id="reiniciar">Reiniciar juego</button>
     `; // Muestra la puntuación final y un botón para reiniciar el juego
 
-    document.getElementById('reiniciar').addEventListener('click', function() {
+    document.getElementById('reiniciar').addEventListener('click', function () {
         location.reload(); // Recarga la página para restablecer el juego
     });
 }

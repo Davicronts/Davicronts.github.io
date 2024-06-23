@@ -15,10 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let personajes = actualizarPersonajes('opcion1', personajesFemeninos, personajesMasculinos);
     const seleccionar = document.getElementById('seleccionar');
     const radioButtons = document.querySelectorAll('input[name="opcion"]');
+    let genero = "ambos";
 
     // Configuración inicial
     actualizarOpcionesSelect(personajes, seleccionar);
     ocultarDetallesPersonaje();
+    console.log(personajes);
 
     // Filtro de búsqueda
     document.getElementById('busqueda').addEventListener('input', function () {
@@ -36,6 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
         radio.addEventListener('change', (event) => {
             const seleccionado = event.target.value;
             personajes = actualizarPersonajes(seleccionado, personajesFemeninos, personajesMasculinos);
+            
+            if (seleccionado === 'opcion1') {
+                genero = 'ambos';
+            } else if (seleccionado === 'opcion2') {
+                genero = 'femenino';
+            } else if (seleccionado === 'opcion3') {
+                genero = 'masculino';
+            }
+
             actualizarOpcionesSelect(personajes, seleccionar);
             ocultarDetallesPersonaje();
         });
@@ -74,6 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Iniciar el juego
     document.getElementById('juego').addEventListener('click', function () {
         ocultarTodo();
-        iniciarJuego(personajes);
+        iniciarJuego(personajesFemeninos, personajesMasculinos, genero);
     });
 });

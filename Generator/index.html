@@ -11,13 +11,7 @@
 
 <body>
     <header class="encabezado">
-        <button id="juego">Iniciar Juego</button>
-        <button id="generar">Generar personaje</button>
-        <button id="listado">Listado de personajes</button>
-        <select id="seleccionar">
-            <option value="">Seleccionar personaje</option>
-        </select>
-        <button id="reset">Reiniciar</button>
+
         <div class="opciones-container">
             <label for="opcion1" class="opcion">
                 <input type="radio" id="opcion1" name="opcion" value="opcion1" checked>
@@ -32,6 +26,18 @@
                 <span class="opciones">Solo Husbandos</span>
             </label>
         </div>
+
+        <button id="generar">Generar personaje</button>
+
+        <select id="seleccionar">
+            <option value="">Seleccionar personaje</option>
+        </select>
+
+        <button id="listado">Listado de personajes</button>
+
+        <button id="reset">Reiniciar</button>
+
+        <button id="juego">Iniciar Juego</button>
     </header>
     <main>
         <div id="contenedor-juego"></div>
