@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         radio.addEventListener('change', (event) => {
             const seleccionado = event.target.value;
             personajes = actualizarPersonajes(seleccionado, personajesFemeninos, personajesMasculinos);
-            
+
             if (seleccionado === 'opcion1') {
                 genero = 'ambos';
             } else if (seleccionado === 'opcion2') {
@@ -84,7 +84,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Iniciar el juego
     document.getElementById('juego').addEventListener('click', function () {
+
         ocultarTodo();
-        iniciarJuego(personajesFemeninos, personajesMasculinos, genero);
+
+        // Asegura que el contenedor del juego sea visible
+        document.getElementById('contenedor-juego').style.display = 'block';
+
+        // Muestra la pantalla de inicio
+        document.getElementById('pantalla-inicio').style.display = 'flex';
+
+        // Evento para iniciar el juego al hacer clic en el botón "Empezar"
+        document.getElementById('btn-empezar').addEventListener('click', () => {
+
+            iniciarJuego(personajesFemeninos, personajesMasculinos, genero);
+        });
     });
 });

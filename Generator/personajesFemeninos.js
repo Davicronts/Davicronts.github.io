@@ -149,7 +149,7 @@ const personajesFemeninos = [
         imagen: "media/img/13.webp",
         video: "https://v.animethemes.moe/GotoubunNoHanayomeSpecials-OP1.webm",
         url: "https://5hanayome.fandom.com/wiki/Yotsuba_Nakano",
-        descripcion: "Atlética y enérgica, siempre dispuesta a ayudar y con una sonrisa eterna. Su entusiasmo y espíritu deportivo la hacen la chispa del grupo, aunque a veces sus buenas intenciones causan más problemas de los que se resuelven.",
+        descripcion: "Atlética y enérgica, siempre está dispuesta a ayudarte con una sonrisa eterna. Su entusiasmo y espíritu deportivo la hacen la chispa del grupo, aunque a veces sus buenas intenciones causan más problemas de los que se resuelven.",
         tituloVideo: "Opening - Gotoubun no Mirai",
         episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2ZvN3c3enh0MTFhYw==",
         trailer: "https://www.youtube.com/embed/pCwfEB6PbFk?si=SfbFT6UQ7mIG8wm7",

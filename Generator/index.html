@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generator</title>
+    <title>Anime Generator</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
 </head>
@@ -39,8 +39,20 @@
 
         <button id="juego">Iniciar Juego</button>
     </header>
+
     <main>
-        <div id="contenedor-juego"></div>
+
+        <div id="contenedor-juego">
+            <div id="pantalla-inicio">
+                <h1>🌟 Bienvenido al Anime Quiz de Personajes 🌟</h1>
+                <p>Responde a las preguntas correctamente y consigue puntos, si llegas a 20 puntos en 3 rondas ganas el juego.</p>
+                <p>Cada ronda tiene 10 preguntas. ✏️</p>
+                <p>Por cada respuesta correcta ✔️ obtienes 1 punto.</p>
+                <p>Por cada respuesta incorrecta ❌ pierdes 1 punto.</p>
+                <button id="btn-empezar">Empezar</button>
+            </div>
+        </div>
+
         <div id="contenedor-grid">
             <div id="busqueda-container">
                 <input type="text" id="busqueda" placeholder="Buscar por nombre o anime...">
@@ -48,6 +60,7 @@
             </div>
             <div id="grid-personajes"></div>
         </div>
+
         <div id="personaje">
             <div class="personaje-fila">
                 <div class="personaje-info">

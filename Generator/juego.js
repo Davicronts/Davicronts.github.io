@@ -1,5 +1,5 @@
 export function generarPregunta(personajes, personajesFemeninos, personajesMasculinos, genero) {
-    
+
     if (genero === 'masculino') {
         personajes = personajesMasculinos;
     } else if (genero === 'femenino') {
@@ -42,27 +42,27 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
     // Genera el contenido de la pregunta y las respuestas según el tipo de pregunta
     switch (tipoPregunta) {
         case 1:
-            contenidoPregunta = `<img src="${personajeCorrecto.imagen}" alt="Personaje">`;
+            contenidoPregunta = `<p class="texto-pregunta">¿Quién es este personaje?</p><img src="${personajeCorrecto.imagen}" alt="Personaje">`;
             respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
             break;
         case 2:
-            contenidoPregunta = `<p>¿Quién es '${personajeCorrecto.nombre}'?</p>`;
+            contenidoPregunta = `<p class="texto-pregunta">¿Quién es '${personajeCorrecto.nombre}'?</p>`;
             respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}"><img src="${op.imagen}" alt="Personaje"></button>`).join('');
             break;
         case 3:
-            contenidoPregunta = `<p>${personajeCorrecto.descripcion}</p>`;
+            contenidoPregunta = `<p class="texto-pregunta">¿De quién es esta descripción?</p><p>${personajeCorrecto.descripcion}</p>`;
             respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
             break;
         case 4:
-            contenidoPregunta = `<p>${personajeCorrecto.descripcion}</p>`;
+            contenidoPregunta = `<p class="texto-pregunta">¿De quién es esta descripción?</p><p>${personajeCorrecto.descripcion}</p>`;
             respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}"><img src="${op.imagen}" alt="Personaje"></button>`).join('');
             break;
         case 5:
-            contenidoPregunta = `<img src="${personajeCorrecto.imagen}" alt="Personaje">`;
+            contenidoPregunta = `<p class="texto-pregunta">¿Quién es este personaje?</p><img src="${personajeCorrecto.imagen}" alt="Personaje">`;
             respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.descripcion}</button>`).join('');
             break;
         case 6:
-            contenidoPregunta = `<p>Un personaje de '${personajeCorrecto.anime}'.</p>`;
+            contenidoPregunta = `<p class="texto-pregunta">Selecciona un personaje de '${personajeCorrecto.anime}'.</p>`;
             respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
             break;
     }
@@ -84,8 +84,9 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
 
 // Inicia el juego con un conjunto de personajes
 export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) {
+
+    document.getElementById('pantalla-inicio').style.display = 'none'; // Oculta la pantalla de inicio
     const contenedorJuego = document.getElementById('contenedor-juego');
-    contenedorJuego.style.display = 'block'; // Asegura que el contenedor del juego sea visible
 
     let personajes = [];
     let preguntas = [];
@@ -100,11 +101,13 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) 
     function mostrarSiguientePregunta() {
         if (preguntaActual < preguntas.length) {
             mostrarPregunta(preguntas[preguntaActual], contenedorJuego, (esCorrecto) => {
+
                 if (esCorrecto) {
-                    alert('¡Correcto!');
                     puntuacion++; // Incrementa la puntuación si la respuesta es correcta
+                    alert('¡Respuesta correcta! ✔️');
                 } else {
-                    alert('Incorrecto');
+                    puntuacion--;
+                    alert('Respuesta incorrecta ❌');
                 }
 
                 preguntaActual++; // Incrementa el índice de la pregunta actual
@@ -123,12 +126,18 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) 
 // Finaliza el juego y muestra la puntuación final
 export function finalizarJuego(puntuacion) {
     const contenedorJuego = document.getElementById('contenedor-juego');
-    contenedorJuego.innerHTML = `
-        <p>Juego terminado. ¡Gracias por jugar!<br>Puntuación: ${puntuacion}</p>
-        <button id="reiniciar">Reiniciar juego</button>
-    `; // Muestra la puntuación final y un botón para reiniciar el juego
 
-    document.getElementById('reiniciar').addEventListener('click', function () {
-        location.reload(); // Recarga la página para restablecer el juego
+    contenedorJuego.innerHTML = `
+        <div id="pantalla-fin">
+            <p>Fin de la ronda, tienes una puntuación de: ${puntuacion}.</p>
+            <div class="botones">
+                <button id="siguiente">Siguiente ronda</button>
+                <button id="finalizar">Finalizar juego</button>
+            </div>
+        </div>
+    `;
+
+    document.getElementById('finalizar').addEventListener('click', function () {
+        location.reload(); // Recarga la página para finalizar el juego
     });
 }
