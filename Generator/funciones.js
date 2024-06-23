@@ -1,3 +1,4 @@
+// Actualiza la lista de personajes según la opción seleccionada
 export function actualizarPersonajes(opcion, personajesFemeninos, personajesMasculinos) {
     let personajes = [];
     if (opcion === 'opcion1') {
@@ -10,6 +11,7 @@ export function actualizarPersonajes(opcion, personajesFemeninos, personajesMasc
     return ordenarArrayPorNombre(personajes);
 }
 
+// Actualiza las opciones del select según la lista de personajes
 export function actualizarOpcionesSelect(personajesOrdenados, seleccionar) {
     seleccionar.innerHTML = '<option value="">Seleccionar personaje</option>';
     personajesOrdenados.forEach((personaje, indice) => {
@@ -20,10 +22,12 @@ export function actualizarOpcionesSelect(personajesOrdenados, seleccionar) {
     });
 }
 
+// Ordena la lista de personajes por nombre
 export function ordenarArrayPorNombre(array) {
     return array.sort((a, b) => a.nombre.localeCompare(b.nombre));
 }
 
+// Muestra los detalles del personaje seleccionado
 export function mostrarPersonaje(indice, personajes, seleccionar = null) {
     ocultarDetallesPersonaje();
 
@@ -52,6 +56,7 @@ export function mostrarPersonaje(indice, personajes, seleccionar = null) {
     }
 }
 
+// Oculta los detalles del personaje seleccionado
 export function ocultarDetallesPersonaje() {
     document.getElementById('personaje').style.display = 'none';
     document.getElementById('personaje-nombre').textContent = '';
@@ -68,9 +73,10 @@ export function ocultarDetallesPersonaje() {
     document.getElementById('mensaje-busqueda-vacia').style.display = 'none';
 }
 
+// Muestra el listado de personajes
 export function mostrarListadoPersonajes(personajes) {
     ocultarDetallesPersonaje();
-    
+
     document.getElementById('seleccionar').value = "";
 
     const contenedorGrid = document.getElementById('contenedor-grid');
@@ -97,6 +103,7 @@ export function mostrarListadoPersonajes(personajes) {
     document.getElementById('busqueda').style.display = 'block';
 }
 
+// Filtra los personajes según el texto de búsqueda
 export function filtrarPersonajes(textoBusqueda, personajes) {
     const gridPersonajes = document.getElementById('grid-personajes');
     const resultadoBusqueda = personajes.filter(personaje =>
@@ -109,7 +116,7 @@ export function filtrarPersonajes(textoBusqueda, personajes) {
     if (resultadoBusqueda.length === 0) {
         document.getElementById('mensaje-busqueda-vacia').style.display = 'block';
     } else {
-        resultadoBusqueda.forEach((personaje, indice) => {
+        resultadoBusqueda.forEach((personaje) => {
             const item = document.createElement('div');
             item.className = 'grid-item';
             item.innerHTML = `
@@ -125,4 +132,11 @@ export function filtrarPersonajes(textoBusqueda, personajes) {
         });
         document.getElementById('mensaje-busqueda-vacia').style.display = 'none';
     }
+}
+
+// Oculta todo el contenido principal
+export function ocultarTodo() {
+    document.querySelector('header').style.display = 'none';
+    document.getElementById('contenedor-grid').style.display = 'none';
+    ocultarDetallesPersonaje();
 }

@@ -11,40 +11,30 @@
 
 <body>
     <header class="encabezado">
-
+        <button id="juego">Iniciar Juego</button>
         <button id="generar">Generar personaje</button>
-
         <button id="listado">Listado de personajes</button>
-
         <select id="seleccionar">
             <option value="">Seleccionar personaje</option>
         </select>
-
         <button id="reset">Reiniciar</button>
-
         <div class="opciones-container">
-
             <label for="opcion1" class="opcion">
                 <input type="radio" id="opcion1" name="opcion" value="opcion1" checked>
                 <span class="opciones">Todos los personajes</span>
             </label>
-
             <label for="opcion2" class="opcion">
                 <input type="radio" id="opcion2" name="opcion" value="opcion2">
                 <span class="opciones">Solo Waifus</span>
             </label>
-
             <label for="opcion3" class="opcion">
                 <input type="radio" id="opcion3" name="opcion" value="opcion3">
                 <span class="opciones">Solo Husbandos</span>
             </label>
         </div>
-
-
     </header>
-
     <main>
-
+        <div id="contenedor-juego"></div>
         <div id="contenedor-grid">
             <div id="busqueda-container">
                 <input type="text" id="busqueda" placeholder="Buscar por nombre o anime...">
@@ -52,21 +42,18 @@
             </div>
             <div id="grid-personajes"></div>
         </div>
-
         <div id="personaje">
-
             <div class="personaje-fila">
                 <div class="personaje-info">
                     <h2 id="personaje-nombre"></h2>
                     <p id="personaje-anime"></p>
-                    <img id="personaje-imagen" src="">
+                    <img id="personaje-imagen" src="" alt="Imagen del personaje">
                     <p id="personaje-descripcion"></p>
                     <a id="personaje-url" href="" target="_blank">Más información</a>
                     <a id="personaje-url-db" href="" target="_blank">aniDB</a>
                 </div>
                 <div id="personaje-trailer"></div>
             </div>
-
             <div class="personaje-fila">
                 <div id="personaje-video"></div>
                 <div id="personaje-episodio"></div>
@@ -74,10 +61,10 @@
         </div>
     </main>
 
-
     <script type="module" src="personajesFemeninos.js"></script>
     <script type="module" src="personajesMasculinos.js"></script>
     <script type="module" src="funciones.js"></script>
+    <script type="module" src="juego.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 

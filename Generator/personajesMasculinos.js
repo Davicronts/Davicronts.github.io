@@ -197,7 +197,7 @@ const personajesMasculinos = [
         imagen: "media/img/59.jpg",
         video: "https://v.animethemes.moe/Takagi3-OP1-NCBD1080.webm",
         url: "https://karakai-jouzu-no-takagi-san.fandom.com/wiki/Nishikata",
-        descripcion: "Un chico eternamente atormentado por las bromas de su compañera Takagi. Con su espíritu competitivo y sus planes que siempre fallan, intenta sin éxito tomar la delantera.",
+        descripcion: "Un chico eternamente atormentado por las bromas de su compañera. Con su espíritu competitivo y sus planes que siempre fallan, intenta sin éxito tomar la delantera.",
         tituloVideo: "Opening - Iwanai kedo ne.",
         episodio: "https://uqload.to/embed-tvpvb9wh1193.html",
         trailer: "https://www.youtube.com/embed/g4VJra3sLMg?si=JozqgopuedckxXGt",
