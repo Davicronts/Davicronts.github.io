@@ -95,8 +95,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Evento para iniciar el juego al hacer clic en el botón "Empezar"
         document.getElementById('btn-empezar').addEventListener('click', () => {
+            document.getElementById('pantalla-inicio').style.display = 'none'; // Oculta la pantalla de inicio
+            const ronda = 1; // Ronda inicial
+            const puntuacion = 0; // Puntuación inicial
+            iniciarJuego(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion);
+        });
 
-            iniciarJuego(personajesFemeninos, personajesMasculinos, genero);
+        // Evento para salir del juego al hacer clic en el botón "Salir"
+        document.getElementById('btn-salir').addEventListener('click', function () {
+            location.reload(); // Recarga la página para salir del juego
         });
     });
 });

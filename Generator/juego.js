@@ -1,3 +1,4 @@
+// Función para generar una pregunta
 export function generarPregunta(personajes, personajesFemeninos, personajesMasculinos, genero) {
 
     if (genero === 'masculino') {
@@ -30,7 +31,6 @@ export function generarPregunta(personajes, personajesFemeninos, personajesMascu
     return { tipoPregunta, personajeCorrecto, opciones }; // Retorna el tipo de pregunta, el personaje correcto y las opciones
 }
 
-
 // Muestra una pregunta en el contenedor proporcionado y configura el callback para manejar la respuesta
 export function mostrarPregunta(pregunta, contenedor, callback) {
     contenedor.innerHTML = ''; // Limpia el contenido anterior
@@ -43,27 +43,27 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
     switch (tipoPregunta) {
         case 1:
             contenidoPregunta = `<p class="texto-pregunta">¿Quién es este personaje?</p><img src="${personajeCorrecto.imagen}" alt="Personaje">`;
-            respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
+            respuestas = opciones.map(op => `<button class="opcion opcion-texto" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
             break;
         case 2:
             contenidoPregunta = `<p class="texto-pregunta">¿Quién es '${personajeCorrecto.nombre}'?</p>`;
-            respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}"><img src="${op.imagen}" alt="Personaje"></button>`).join('');
+            respuestas = opciones.map(op => `<button class="opcion opcion-imagen" data-correcto="${op.nombre === personajeCorrecto.nombre}"><img src="${op.imagen}" alt="Personaje"></button>`).join('');
             break;
         case 3:
             contenidoPregunta = `<p class="texto-pregunta">¿De quién es esta descripción?</p><p>${personajeCorrecto.descripcion}</p>`;
-            respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
+            respuestas = opciones.map(op => `<button class="opcion opcion-texto" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
             break;
         case 4:
             contenidoPregunta = `<p class="texto-pregunta">¿De quién es esta descripción?</p><p>${personajeCorrecto.descripcion}</p>`;
-            respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}"><img src="${op.imagen}" alt="Personaje"></button>`).join('');
+            respuestas = opciones.map(op => `<button class="opcion opcion-imagen" data-correcto="${op.nombre === personajeCorrecto.nombre}"><img src="${op.imagen}" alt="Personaje"></button>`).join('');
             break;
         case 5:
             contenidoPregunta = `<p class="texto-pregunta">¿Quién es este personaje?</p><img src="${personajeCorrecto.imagen}" alt="Personaje">`;
-            respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.descripcion}</button>`).join('');
+            respuestas = opciones.map(op => `<button class="opcion opcion-parrafo" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.descripcion}</button>`).join('');
             break;
         case 6:
             contenidoPregunta = `<p class="texto-pregunta">Selecciona un personaje de '${personajeCorrecto.anime}'.</p>`;
-            respuestas = opciones.map(op => `<button class="opcion" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
+            respuestas = opciones.map(op => `<button class="opcion opcion-texto" data-correcto="${op.nombre === personajeCorrecto.nombre}">${op.nombre}</button>`).join('');
             break;
     }
 
@@ -83,19 +83,16 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
 }
 
 // Inicia el juego con un conjunto de personajes
-export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) {
+export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion) {
 
-    document.getElementById('pantalla-inicio').style.display = 'none'; // Oculta la pantalla de inicio
-    const contenedorJuego = document.getElementById('contenedor-juego');
+    const contenedorJuego = document.getElementById('contenedor-juego'); // Contenedor para el juego
+    let personajes = []; // Array para almacenar los personajes
+    let preguntas = []; // Array para almacenar las preguntas
+    let preguntaActual = 0; // Índice de la pregunta actual
 
-    let personajes = [];
-    let preguntas = [];
     for (let i = 0; i < 10; i++) {
         preguntas.push(generarPregunta(personajes, personajesFemeninos, personajesMasculinos, genero)); // Genera 10 preguntas
     }
-
-    let preguntaActual = 0; // Índice de la pregunta actual
-    let puntuacion = 0; // Puntuación inicial
 
     // Muestra la siguiente pregunta
     function mostrarSiguientePregunta() {
@@ -106,7 +103,7 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) 
                     puntuacion++; // Incrementa la puntuación si la respuesta es correcta
                     alert('¡Respuesta correcta! ✔️');
                 } else {
-                    puntuacion--;
+                    puntuacion--; // Decrementa la puntuación si la respuesta es incorrecta
                     alert('Respuesta incorrecta ❌');
                 }
 
@@ -114,7 +111,7 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) 
                 if (preguntaActual < preguntas.length) {
                     mostrarSiguientePregunta(); // Muestra la siguiente pregunta
                 } else {
-                    finalizarJuego(puntuacion); // Finaliza el juego si no hay más preguntas
+                    finalizarRonda(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion); // Finaliza la ronda si no hay más preguntas
                 }
             });
         }
@@ -123,21 +120,97 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero) 
     mostrarSiguientePregunta(); // Muestra la primera pregunta
 }
 
-// Finaliza el juego y muestra la puntuación final
-export function finalizarJuego(puntuacion) {
-    const contenedorJuego = document.getElementById('contenedor-juego');
+// Finaliza la ronda y muestra la puntuación final
+export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion) {
 
-    contenedorJuego.innerHTML = `
+    const contenedorJuego = document.getElementById('contenedor-juego');
+    contenedorJuego.innerHTML = "";
+
+    if (ronda < 3) {
+        contenedorJuego.innerHTML = `
         <div id="pantalla-fin">
-            <p>Fin de la ronda, tienes una puntuación de: ${puntuacion}.</p>
+            <p>Fin de la ronda ${ronda}, tienes ${puntuacion} puntos.</p>
             <div class="botones">
                 <button id="siguiente">Siguiente ronda</button>
-                <button id="finalizar">Finalizar juego</button>
+                <button id="finalizar">Finalizar</button>
             </div>
         </div>
     `;
+        ronda++;
+
+    } else if (puntuacion < 20 && ronda === 3) {
+        contenedorJuego.innerHTML = `
+        <div id="pantalla-fin">
+            <p>Fin del juego, has conseguido ${puntuacion} puntos.</p>
+            <p>☠️ ¡Has perdido! ☠️</p>
+            <div class="botones">
+                <button id="siguiente">Reiniciar</button>
+                <button id="finalizar">Finalizar</button>
+            </div>
+        </div>
+    `;
+        ronda = 1;
+        puntuacion = 0;
+
+    } else if (puntuacion >= 20 && puntuacion < 30 && ronda === 3) {
+        contenedorJuego.innerHTML = `
+        <div id="pantalla-fin">
+            <p>Fin del juego, has conseguido ${puntuacion} puntos.</p>
+            <p>✨ ¡Felicidades! ¡Has ganado! ✨</p>
+            <div class="botones">
+                <button id="siguiente">Reiniciar</button>
+                <button id="finalizar">Finalizar</button>
+            </div>
+        </div>
+    `;
+        ronda = 1;
+        puntuacion = 0;
+
+    } else if (ronda > 3 && ronda < 10) {
+        contenedorJuego.innerHTML = `
+        <div id="pantalla-fin">
+            <p>Fin de la ronda ${ronda}, tienes ${puntuacion} puntos.</p>
+            <div class="botones">
+                <button id="siguiente">Siguiente ronda</button>
+                <button id="finalizar">Finalizar</button>
+            </div>
+        </div>
+    `;
+        ronda++;
+
+    } else if (ronda >= 10) {
+        contenedorJuego.innerHTML = `
+        <div id="pantalla-fin">
+            <p>Fin de la ronda ${ronda}, tienes ${puntuacion} puntos.</p>
+            <p>🤩 Adoras este quiz, ¡Gracias! 🤩</p>
+            <div class="botones">
+                <button id="siguiente">Siguiente ronda</button>
+                <button id="finalizar">Finalizar</button>
+            </div>
+        </div>
+    `;
+        ronda++;
+
+    } else if (puntuacion === 30 && ronda === 3) {
+        contenedorJuego.innerHTML = `
+        <div id="pantalla-fin">
+            <p>Fin del juego, has conseguido ${puntuacion} puntos.</p>
+            <p>👑 ¡Increíble! ¡Tienes una puntuación perfecta! 👑</p>
+            <p>Puedes seguir jugando e ir obteniendo puntos infinitamente 👍</p>
+            <div class="botones">
+                <button id="siguiente">Siguiente ronda</button>
+                <button id="finalizar">Finalizar</button>
+            </div>
+        </div>
+    `;
+        ronda++;
+    }
 
     document.getElementById('finalizar').addEventListener('click', function () {
         location.reload(); // Recarga la página para finalizar el juego
+    });
+
+    document.getElementById('siguiente').addEventListener('click', function () {
+        iniciarJuego(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion); // Inicia la siguiente ronda
     });
 }

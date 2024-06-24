@@ -47,7 +47,7 @@ input[type="radio"]:checked+span {
     font-size: 1.2em;
 }
 
-.opcion {
+.opciones-container .opcion {
     margin: 5px;
 }
 
@@ -262,7 +262,6 @@ input[type="radio"]:checked+span {
 
 #pantalla-fin p {
     font-size: 1.4em;
-    width: 500px;
 }
 
 #pantalla-fin .botones {
@@ -279,7 +278,7 @@ input[type="radio"]:checked+span {
     border: 1px solid #ccc;
     padding: 100px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -289,8 +288,10 @@ input[type="radio"]:checked+span {
     margin: 0 auto;
 }
 
-#contenedor-juego button, #btn-empezar {
-    max-width: 250px;
+#contenedor-juego button,
+#btn-empezar,
+#btn-salir {
+    cursor: pointer;
     border-radius: 50px;
     background-color: #87CEEB;
     border: none;
@@ -298,8 +299,25 @@ input[type="radio"]:checked+span {
     font-size: 1.4em;
 }
 
-#contenedor-juego button:hover, #btn-empezar:hover {
+#contenedor-juego button:hover,
+#btn-empezar:hover,
+#btn-salir:hover {
     background-color: #F0E68C;
+}
+
+.botones-inicio {
+    display: flex;
+    gap: 100px;
+}
+
+#btn-empezar,
+#btn-salir {
+    width: 150px;
+}
+
+#siguiente,
+#finalizar {
+    width: 225px;
 }
 
 #contenedor-juego img {
@@ -320,7 +338,7 @@ input[type="radio"]:checked+span {
     padding-bottom: 40px;
 }
 
-.pregunta p:nth-child(2){
+.pregunta p:nth-child(2) {
     color: #708090;
 }
 
@@ -332,7 +350,19 @@ input[type="radio"]:checked+span {
     margin-top: 50px;
     display: flex;
     place-content: center;
-    gap: 50px;
+    gap: 100px;
+}
+
+.opcion-texto {
+    width: 250px;
+}
+
+.opcion-imagen {
+    width: 300px;
+}
+
+.opcion-parrafo {
+    max-width: 270px;
 }
 
 @media (max-width: 1400px) {
