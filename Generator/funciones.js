@@ -101,6 +101,7 @@ export function mostrarListadoPersonajes(personajes) {
 
     contenedorGrid.style.display = 'flex';
     document.getElementById('busqueda').style.display = 'block';
+    document.getElementById('arriba').style.display = 'block';
 }
 
 // Filtra los personajes según el texto de búsqueda
