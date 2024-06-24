@@ -436,7 +436,7 @@ input[type="radio"],
     }
 
     .personaje-info {
-        max-width: 310px;
+        max-width: 350px;
     }
 
     #personaje-nombre {
@@ -460,8 +460,8 @@ input[type="radio"],
     #personaje-video video,
     #personaje-episodio iframe,
     #personaje-trailer iframe {
-        width: 340px;
-        height: 190px;
+        width: 350px;
+        height: 200px;
     }
 
     .titulo-video,
