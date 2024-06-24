@@ -240,7 +240,7 @@ const personajesMasculinos = [
         db: "https://anidb.net/anime/13153"
     },
     {
-        nombre: "Aqua Hoshino",
+        nombre: "Aquamarine Hoshino",
         anime: "[Oshi no Ko]",
         imagen: "media/img/63.jpg",
         video: "https://v.animethemes.moe/OshiNoKo-ED1v2-NCBD1080.webm",

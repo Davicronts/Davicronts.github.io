@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ocultarTodo();
 
         // Asegura que el contenedor del juego sea visible
-        document.getElementById('contenedor-juego').style.display = 'block';
+        document.getElementById('contenedor-juego').style.display = 'flex';
 
         // Muestra la pantalla de inicio
         document.getElementById('pantalla-inicio').style.display = 'flex';

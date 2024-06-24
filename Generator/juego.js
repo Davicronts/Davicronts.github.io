@@ -32,12 +32,16 @@ export function generarPregunta(personajes, personajesFemeninos, personajesMascu
 }
 
 // Muestra una pregunta en el contenedor proporcionado y configura el callback para manejar la respuesta
-export function mostrarPregunta(pregunta, contenedor, callback) {
+export function mostrarPregunta(ronda, puntuacion, preguntaActual, pregunta, contenedorDatos, contenedor, callback) {
     contenedor.innerHTML = ''; // Limpia el contenido anterior
+    contenedorDatos.innerHTML = ''; // Limpia el contenido anterior
 
     const { tipoPregunta, personajeCorrecto, opciones } = pregunta; // Desestructura la pregunta
+    let contenidoDatosVariables = ''; // Inicializa el contenido de los valores de las variables
     let contenidoPregunta = ''; // Inicializa el contenido de la pregunta
     let respuestas = ''; // Inicializa las respuestas
+
+    contenidoDatosVariables = `<p class="datos-variables">Ronda actual: ${ronda}</p><p class="datos-variables">Pregunta actual: ${preguntaActual + 1}</p><p class="datos-variables">Puntuación: ${puntuacion}</p>`;
 
     // Genera el contenido de la pregunta y las respuestas según el tipo de pregunta
     switch (tipoPregunta) {
@@ -67,6 +71,9 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
             break;
     }
 
+    // Inserta el contenido de los valores de las variables en el contenedor
+    contenedorDatos.innerHTML = `<div class="datosPregunta">${contenidoDatosVariables}</div>`;
+
     // Inserta el contenido de la pregunta y las respuestas en el contenedor
     contenedor.innerHTML = `
         <div class="pregunta">${contenidoPregunta}</div>
@@ -86,6 +93,7 @@ export function mostrarPregunta(pregunta, contenedor, callback) {
 export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion) {
 
     const contenedorJuego = document.getElementById('contenedor-juego'); // Contenedor para el juego
+    const contenedorDatos = document.getElementById('contenedor-datosVariables'); // Contenedor para los datos de lasVariables
     let personajes = []; // Array para almacenar los personajes
     let preguntas = []; // Array para almacenar las preguntas
     let preguntaActual = 0; // Índice de la pregunta actual
@@ -97,7 +105,7 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, 
     // Muestra la siguiente pregunta
     function mostrarSiguientePregunta() {
         if (preguntaActual < preguntas.length) {
-            mostrarPregunta(preguntas[preguntaActual], contenedorJuego, (esCorrecto) => {
+            mostrarPregunta(ronda, puntuacion, preguntaActual, preguntas[preguntaActual], contenedorDatos, contenedorJuego, (esCorrecto) => {
 
                 if (esCorrecto) {
                     puntuacion++; // Incrementa la puntuación si la respuesta es correcta
@@ -126,10 +134,13 @@ export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero
     const contenedorJuego = document.getElementById('contenedor-juego');
     contenedorJuego.innerHTML = "";
 
+    const contenedorDatos = document.getElementById('contenedor-datosVariables');
+    contenedorDatos.innerHTML = "";
+
     if (ronda < 3) {
         contenedorJuego.innerHTML = `
         <div id="pantalla-fin">
-            <p>Fin de la ronda ${ronda}, tienes ${puntuacion} puntos.</p>
+            <p>🕹️ Fin de la ronda ${ronda}, tienes en total ${puntuacion} puntos. 🕹️</p>
             <div class="botones">
                 <button id="siguiente">Siguiente ronda</button>
                 <button id="finalizar">Finalizar</button>
@@ -157,6 +168,7 @@ export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero
         <div id="pantalla-fin">
             <p>Fin del juego, has conseguido ${puntuacion} puntos.</p>
             <p>✨ ¡Felicidades! ¡Has ganado! ✨</p>
+            <p>💪 Ahora intenta conseguir la máxima puntuación 💪</p>
             <div class="botones">
                 <button id="siguiente">Reiniciar</button>
                 <button id="finalizar">Finalizar</button>
@@ -169,7 +181,7 @@ export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero
     } else if (ronda > 3 && ronda < 10) {
         contenedorJuego.innerHTML = `
         <div id="pantalla-fin">
-            <p>Fin de la ronda ${ronda}, tienes ${puntuacion} puntos.</p>
+            <p>🕹️ Fin de la ronda ${ronda}, tienes en total ${puntuacion} puntos. 🕹️</p>
             <div class="botones">
                 <button id="siguiente">Siguiente ronda</button>
                 <button id="finalizar">Finalizar</button>
