@@ -137,6 +137,7 @@ export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero
 
     const contenedorDatos = document.getElementById('contenedor-datosVariables');
     contenedorDatos.innerHTML = "";
+    contenedorDatos.style.display = 'none';
 
     if (ronda < 3) {
         contenedorJuego.innerHTML = `
