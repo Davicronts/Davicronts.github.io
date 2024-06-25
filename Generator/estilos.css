@@ -579,10 +579,11 @@ input[type="radio"],
     #btn-salir {
         padding: 20px;
         font-size: 1.3em;
+        max-width: 320px;
     }
 
     #pantalla-fin {
-        gap: 50px;
+        gap: 80px;
     }
 
     #pantalla-fin .botones {
@@ -592,6 +593,7 @@ input[type="radio"],
 
     #pantalla-fin p {
         font-size: 1.3em;
+        max-width: 260px;
     }
 
     #pantalla-inicio {
