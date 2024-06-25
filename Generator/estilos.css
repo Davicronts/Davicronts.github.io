@@ -253,7 +253,7 @@ input[type="radio"],
     justify-content: center;
     text-align: center;
     gap: 80px;
-    min-height: 88vh;
+    min-height: 87vh;
 }
 
 #pantalla-inicio h1 {
@@ -273,7 +273,7 @@ input[type="radio"],
     justify-content: center;
     text-align: center;
     gap: 100px;
-    min-height: 88vh;
+    min-height: 87vh;
 }
 
 #pantalla-fin p {
@@ -289,10 +289,13 @@ input[type="radio"],
 #contenedor-datosVariables {
     display: none;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .datosPregunta {
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
     place-content: center;
     font-weight: bold;
@@ -304,8 +307,8 @@ input[type="radio"],
     display: none;
     flex-direction: column;
     width: 100%;
-    min-height: 89vh;
-    max-width: 1750px;
+    min-height: 88vh;
+    max-width: 1700px;
     background-color: #F0F8FF;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -388,6 +391,7 @@ input[type="radio"],
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 .opcion-texto {
