@@ -118,6 +118,7 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, 
 
                 preguntaActual++; // Incrementa el índice de la pregunta actual
                 if (preguntaActual < preguntas.length) {
+                    window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplaza la pantalla hacia arriba
                     mostrarSiguientePregunta(); // Muestra la siguiente pregunta
                 } else {
                     finalizarRonda(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion); // Finaliza la ronda si no hay más preguntas
