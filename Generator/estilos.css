@@ -556,7 +556,7 @@ input[type="radio"],
     }
 
     #contenedor-juego {
-        max-width: 385px;
+        max-width: 350px;
         align-items: center;
         justify-content: center;
         gap: 80px;
