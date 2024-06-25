@@ -113,7 +113,7 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, 
                     alert('¡Respuesta correcta! 👌');
                 } else {
                     puntuacion--; // Decrementa la puntuación si la respuesta es incorrecta
-                    alert('Respuesta incorrecta 👎');
+                    alert('Respuesta incorrecta ❌');
                 }
 
                 preguntaActual++; // Incrementa el índice de la pregunta actual
