@@ -19,6 +19,7 @@ p {
 .encabezado {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     background-color: #008B8B;
@@ -51,7 +52,8 @@ input[type="radio"]:checked+span {
     margin: 5px;
 }
 
-.encabezado button, #arriba button {
+.encabezado button,
+#arriba button {
     font-size: 1.4em;
     font-weight: bold;
     padding: 10px 30px;
@@ -154,16 +156,15 @@ input[type="radio"],
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    margin: 10px;
+    margin: 50px;
+    gap: 100px;
 }
 
 .personaje-fila {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    gap: 350px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .personaje-info {
@@ -242,6 +243,7 @@ input[type="radio"],
 
 #arriba {
     display: none;
+    margin-top: 30px;
 }
 
 #pantalla-inicio {
@@ -400,7 +402,7 @@ input[type="radio"],
     width: 350px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
 
     .encabezado {
         gap: 20px;
@@ -518,7 +520,8 @@ input[type="radio"],
         margin: 0 auto;
     }
 
-    .grid-item img, p {
+    .grid-item img,
+    p {
         max-width: 220px;
         max-height: 420px;
     }
