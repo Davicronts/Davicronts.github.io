@@ -93,7 +93,8 @@ export function mostrarPregunta(ronda, puntuacion, preguntaActual, pregunta, con
 export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, ronda, puntuacion) {
 
     const contenedorJuego = document.getElementById('contenedor-juego'); // Contenedor para el juego
-    const contenedorDatos = document.getElementById('contenedor-datosVariables'); // Contenedor para los datos de lasVariables
+    const contenedorDatos = document.getElementById('contenedor-datosVariables'); // Contenedor para los datos de las variables
+    contenedorDatos.style.display = 'block'; // Muestra el contenedor de los datos de las variables
     let personajes = []; // Array para almacenar los personajes
     let preguntas = []; // Array para almacenar las preguntas
     let preguntaActual = 0; // Índice de la pregunta actual

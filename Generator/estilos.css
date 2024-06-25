@@ -250,7 +250,8 @@ input[type="radio"],
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 60px;
+    gap: 80px;
+    min-height: 88vh;
 }
 
 #pantalla-inicio h1 {
@@ -284,7 +285,7 @@ input[type="radio"],
 
 #contenedor-datosVariables {
     display: none;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .datosPregunta {
@@ -301,7 +302,7 @@ input[type="radio"],
     flex-direction: column;
     width: 100%;
     max-width: 1800px;
-    min-height: 800px;
+    min-height: 90vh;
     background-color: #F0F8FF;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -310,6 +311,7 @@ input[type="radio"],
     margin: 0 auto;
     gap: 125px;
     padding: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -397,6 +399,17 @@ input[type="radio"],
 }
 
 @media (max-width: 1400px) {
+
+    .encabezado {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .opciones-container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-width: 260px;
+    }
 
     #personaje-video video,
     #personaje-episodio iframe,
