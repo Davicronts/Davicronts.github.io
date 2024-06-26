@@ -135,10 +135,10 @@ const personajesMasculinos = [
         nombre: "Tanjiro Kamado",
         anime: "Kimetsu no Yaiba",
         imagen: "media/img/53.jpg",
-        video: "https://v.animethemes.moe/KimetsuNoYaibaYuukakuHen-OP1-NCBD1080.webm",
+        video: "https://v.animethemes.moe/KimetsuNoYaiba-ED2-Lyrics.webm",
         url: "https://kimetsu-no-yaiba.fandom.com/wiki/Tanjiro_Kamado",
         descripcion: "El espadachín más amable y cabezota con un olfato increíblemente agudo. Entre decapitar demonios y cuidar de su hermana, siempre encuentra tiempo para ser increíblemente educado.",
-        tituloVideo: "Opening - Zankyou Zanka",
+        tituloVideo: "Ending - Kamado Tanjiro no Uta",
         episodio: "https://uqload.to/embed-r3xsdxr53v7g.html",
         trailer: "https://www.youtube.com/embed/6vMuWuWlW4I?si=e-cAh8qSGOlwQDs5",
         db: "https://anidb.net/anime/14107"
@@ -310,7 +310,43 @@ const personajesMasculinos = [
         episodio: "https://uqload.to/embed-wfqjkgc1omqt.html",
         trailer: "https://www.youtube.com/embed/AQbaZeby2zA?si=sZcU7mLDvREjk8si",
         db: "https://anidb.net/anime/12681"
-    }
+    },
+    {
+        nombre: "Reinhard van Astrea",
+        anime: "Re:Zero kara Hajimeru Isekai Seikatsu",
+        imagen: "media/img/76.jpg",
+        video: "https://v.animethemes.moe/ReZeroS2-OP1-NCBD1080.webm",
+        url: "https://rezero.fandom.com/wiki/Reinhard_van_Astrea",
+        descripcion: "Guapo, caballeroso y con más habilidades especiales que un videojuego con trucos. Siempre llega justo a tiempo para salvar el día y, si fuera un pastel, sería uno imposible de superar.",
+        tituloVideo: "Opening - Realize",
+        episodio: "https://uqload.to/embed-0pbqlenlretw.html",
+        trailer: "https://www.youtube.com/embed/Slz_rahWp6Y?si=00omRhwhcmPCpT7E",
+        db: "https://anidb.net/anime/11370"
+    },
+    {
+        nombre: "Stark",
+        anime: "Sousou no Frieren",
+        imagen: "media/img/79.jpg",
+        video: "https://v.animethemes.moe/SousouNoFrieren-OP2.webm",
+        url: "https://frieren.fandom.com/wiki/Stark",
+        descripcion: "Un guerrero tímido con la fuerza de un oso y la timidez de un gatito. Prefiere evitar ser el centro de atención, pero cuando la situación lo exige, se convierte en un verdadero titán en batalla.",
+        tituloVideo: "Opening - Haru",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL3Y2MzBvcmRoY2VhOQ==",
+        trailer: "https://www.youtube.com/embed/qgQunxD0qCk?si=aq7CJ5LI4Xk7oU_y",
+        db: "https://anidb.net/anime/17617"
+    },
+    {
+        nombre: "Muzan Kibutsuji",
+        anime: "Kimetsu no Yaiba",
+        imagen: "media/img/80.jpg",
+        video: "https://v.animethemes.moe/KimetsuNoYaiba-OP1-NCBD1080.webm",
+        url: "https://kimetsu-no-yaiba.fandom.com/wiki/Muzan_Kibutsuji",
+        descripcion: "Un Michael Jackson demoníaco con complejo de Drácula. Siempre elegante y misterioso, prefiere transformar humanos en demonios en lugar de hacer amigos.",
+        tituloVideo: "Opening - Gurenge",
+        episodio: "https://uqload.to/embed-r3xsdxr53v7g.html",
+        trailer: "https://www.youtube.com/embed/6vMuWuWlW4I?si=e-cAh8qSGOlwQDs5",
+        db: "https://anidb.net/anime/14107"
+    },
 ];
 
 export { personajesMasculinos };

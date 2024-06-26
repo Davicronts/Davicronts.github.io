@@ -586,7 +586,55 @@ const personajesFemeninos = [
         episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL250MXVobTBkMWg0eg==",
         trailer: "https://www.youtube.com/embed/aPP_Ut9Wqlg?si=ZGiQPnYb412uekRX",
         db: "https://anidb.net/anime/8692"
-    }
+    },
+    {
+        nombre: "Darkness",
+        anime: "Kono Subarashii Sekai ni Shukufuku wo!",
+        imagen: "media/img/77.webp",
+        video: "https://v.animethemes.moe/Konosuba-ED1.webm",
+        url: "https://konosuba.fandom.com/wiki/Darkness",
+        descripcion: "La valiente pero algo masoquista caballera. Le encanta lanzarse a la batalla... y recibir golpes. Imagina a una guerrera superpoderosa que disfruta los desafíos tanto como un perrito disfruta las caricias.",
+        tituloVideo: "Ending - Chiisana Boukensha",
+        episodio: "https://uqload.to/embed-k2dtfqsuo212.html",
+        trailer: "https://www.youtube.com/embed/NU87y-38glA?si=6OmOVWpClF-UZJxm",
+        db: "https://anidb.net/anime/11261"
+    },
+    {
+        nombre: "Fern",
+        anime: "Sousou no Frieren",
+        imagen: "media/img/78.jpeg",
+        video: "https://v.animethemes.moe/SousouNoFrieren-ED1-NCBD1080.webm",
+        url: "https://frieren.fandom.com/wiki/Fern",
+        descripcion: "Una maga joven y seria, pero con el corazón de una abuelita preocupada. Siempre está lista para lanzar hechizos poderosos, aunque a veces parece más preocupada por tener sus libros de magia bien organizados.",
+        tituloVideo: "Ending - Anytime Anywhere",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL3Y2MzBvcmRoY2VhOQ==",
+        trailer: "https://www.youtube.com/embed/qgQunxD0qCk?si=aq7CJ5LI4Xk7oU_y",
+        db: "https://anidb.net/anime/17617"
+    },
+    {
+        nombre: "Nadeko Sengoku",
+        anime: "Bakemonogatari",
+        imagen: "media/img/81.jpg",
+        video: "https://v.animethemes.moe/Bakemonogatari-OP4v2.webm",
+        url: "https://bakemonogatari.fandom.com/wiki/Nadeko_Sengoku",
+        descripcion: "La chica tímida y dulce que parece un ángel, pero tiene un lado serpenteante. Es como una gominola encantadora que puede volverse picante de repente.",
+        tituloVideo: "Opening - Ren'ai Circulation",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2NrZjZiZ3hhNzliZA==",
+        trailer: "https://www.youtube.com/embed/X63_YYZjKxA?si=A2iys5fMm6nZncof",
+        db: "https://anidb.net/anime/6327"
+    },
+    {
+        nombre: "Mayoi Hachikuji",
+        anime: "Bakemonogatari",
+        imagen: "media/img/82.jpg",
+        video: "https://v.animethemes.moe/Bakemonogatari-OP2.webm",
+        url: "https://bakemonogatari.fandom.com/wiki/Mayoi_Hachikuji",
+        descripcion: "La pequeña fantasma perdida con una gran mochila y un aún más grande sentido del humor. Siempre está lista con una broma y una sonrisa, haciendo de cada encuentro una divertida aventura.",
+        tituloVideo: "Opening - Kaerimichi",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2NrZjZiZ3hhNzliZA==",
+        trailer: "https://www.youtube.com/embed/X63_YYZjKxA?si=A2iys5fMm6nZncof",
+        db: "https://anidb.net/anime/6327"
+    },
 ];
 
 export { personajesFemeninos };
