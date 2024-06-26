@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     actualizarOpcionesSelect(personajes, seleccionar);
     ocultarDetallesPersonaje();
     console.log(personajes);
+    console.log(personajesFemeninos);
+    console.log(personajesMasculinos);
 
     // Filtro de búsqueda
     document.getElementById('busqueda').addEventListener('input', function () {
