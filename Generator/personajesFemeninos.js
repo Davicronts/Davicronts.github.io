@@ -635,6 +635,114 @@ const personajesFemeninos = [
         trailer: "https://www.youtube.com/embed/X63_YYZjKxA?si=A2iys5fMm6nZncof",
         db: "https://anidb.net/anime/6327"
     },
+    {
+        nombre: "Ruby Hoshino",
+        anime: "[Oshi no Ko]",
+        imagen: "media/img/84.jpg",
+        video: "https://v.animethemes.moe/OshiNoKo-ED1v2-NCBD1080.webm",
+        url: "https://oshinoko.fandom.com/wiki/Ruby_Hoshino",
+        descripcion: "Una idol en ascenso con un entusiasmo contagioso y un secreto sorprendente. Sueña con ser una estrella brillante mientras oculta un pasado intrigante.",
+        tituloVideo: "Ending - Mephisto",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzQ3NG9zNjNjd3Yybg==",
+        trailer: "https://www.youtube.com/embed/gKWEUJ4r5do?si=zqAPIQ55SnRCLbWT",
+        db: "https://anidb.net/anime/17449"
+    },
+    {
+        nombre: "Kana Arima",
+        anime: "[Oshi no Ko]",
+        imagen: "media/img/85.jpg",
+        video: "https://v.animethemes.moe/OshiNoKo-OP1-NCBD1080.webm",
+        url: "https://oshinoko.fandom.com/wiki/Kana_Arima",
+        descripcion: "Una ex actriz prodigio con un toque de diva y una habilidad impresionante. Aunque puede parecer un poco arrogante, su talento y carisma son innegables.",
+        tituloVideo: "Opening - Idol",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzQ3NG9zNjNjd3Yybg==",
+        trailer: "https://www.youtube.com/embed/gKWEUJ4r5do?si=zqAPIQ55SnRCLbWT",
+        db: "https://anidb.net/anime/17449"
+    },
+    {
+        nombre: "Kurumi Ebisuzawa",
+        anime: "Gakkou Gurashi!",
+        imagen: "media/img/86.jpg",
+        video: "https://v.animethemes.moe/GakkouGurashi-ED1.webm",
+        url: "https://gakkou-gurashi.fandom.com/wiki/Kurumi_Ebisuzawa",
+        descripcion: "La chica ruda con pala en mano y corazón de oro. Siempre lista para proteger a sus amigas de los zombis con una sonrisa valiente y un toque de locura.",
+        tituloVideo: "Ending - Harmonize Clover",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly93d3cubXA0dXBsb2FkLmNvbS9lbWJlZC1iazJ6ZDU3OTRuM3EuaHRtbA==",
+        trailer: "https://www.youtube.com/embed/mYyu0yys5Ks?si=yTrdX6VZjThUSl4X",
+        db: "https://anidb.net/anime/10697"
+    },
+    {
+        nombre: "Kohaku",
+        anime: "Dr. STONE",
+        imagen: "media/img/87.jpg",
+        video: "https://v.animethemes.moe/DrStone-OP2-NCBD1080.webm",
+        url: "https://dr-stone.fandom.com/wiki/Kohaku",
+        descripcion: "Una guerrera con la fuerza de un león y la agilidad de un gato. Siempre lista para la acción, combina una actitud feroz con una gran lealtad hacia sus amigos.",
+        tituloVideo: "Opening - Sangenshoku",
+        episodio: "https://mega.nz/embed/P5Z1xIJB#kBZ_wU2VwKnR-vnE00YUatm0ubXoT6bvLNQJvEzTDxE",
+        trailer: "https://www.youtube.com/embed/7YZzYeBartM?si=BJo1E-TRbA20xt0i",
+        db: "https://anidb.net/anime/14491"
+    },
+    {
+        nombre: "Hestia",
+        anime: "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+        imagen: "media/img/88.jpg",
+        video: "https://v.animethemes.moe/DanMachiS2-OP1-NCBD1080.webm",
+        url: "https://danmachi.fandom.com/wiki/Hestia",
+        descripcion: "La diosa adorable con un lazo azul y un corazón enorme. Pequeña en estatura pero gigante en determinación, siempre está apoyando a su héroe con una sonrisa.",
+        tituloVideo: "Opening - HELLO to DREAM",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzFweDNhNDB2amtocw==",
+        trailer: "https://www.youtube.com/embed/sbcwRt0y4kY?si=kpE_tn8VdmFquU4J",
+        db: "https://anidb.net/anime/10894"
+    },
+    {
+        nombre: "Alpha",
+        anime: "Kage no Jitsuryokusha ni Naritakute!",
+        imagen: "media/img/89.jpg",
+        video: "https://v.animethemes.moe/ShadowGarden-ED1-NCBD1080.webm",
+        url: "https://the-eminence-in-shadow.fandom.com/wiki/Alpha",
+        descripcion: "La elegante y poderosa líder del grupo. Con su intelecto agudo y habilidades impresionantes, siempre mantiene la calma y la clase, incluso en las situaciones más peligrosas.",
+        tituloVideo: "Ending - Darling in the Night",
+        episodio: "https://uqload.to/embed-67mz7t0g8jwx.html",
+        trailer: "https://www.youtube.com/embed/L7LgAbGF-WY?si=O1veuoLyBHlpxhzN",
+        db: "https://anidb.net/anime/16073"
+    },
+    {
+        nombre: "Kanna Kamui",
+        anime: "Kobayashi-san Chi no Maidragon",
+        imagen: "media/img/94.jpg",
+        video: "https://v.animethemes.moe/KobayashiSanChiNoMaidDragon-OP1-NCBD1080.webm",
+        url: "https://maid-dragon.fandom.com/wiki/Kanna_Kamui",
+        descripcion: "La adorable dragona con apariencia de niña y un apetito insaciable. Con su ternura desbordante y mirada curiosa, se roba el corazón de todos.",
+        tituloVideo: "Opening - Aozora no Rhapsody",
+        episodio: "https://uqload.to/embed-wpvhy5vsypkk.html",
+        trailer: "https://www.youtube.com/embed/okBHQWnYImg?si=7DWcSYbYrtkeLnjp",
+        db: "https://anidb.net/anime/12091"
+    },
+    {
+        nombre: "Marin Kitagawa",
+        anime: "Sono Bisque Doll wa Koi o Suru",
+        imagen: "media/img/95.webp",
+        video: "https://v.animethemes.moe/BisqueDoll-OP1-NCBD1080.webm",
+        url: "https://sono-bisque-doll-wa-koi-wo-suru.fandom.com/wiki/Marin_Kitagawa",
+        descripcion: "La chica extrovertida y fashionista con una pasión por el cosplay y una energía contagiosa. Siempre alegre y llena de vida, convierte cualquier día normal en una aventura colorida.",
+        tituloVideo: "Opening - San San Days",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzI1bnJmcWFrb244eA==",
+        trailer: "https://www.youtube.com/embed/8oveGY6h6T8?si=FCoyYgeU4R7PadM1",
+        db: "https://anidb.net/anime/16250"
+    },
+    {
+        nombre: "Kiryuu Shino",
+        anime: "Kanojo mo Kanojo",
+        imagen: "media/img/97.webp",
+        video: "https://v.animethemes.moe/KanojoMoKanojoS2-OP1.webm",
+        url: "https://kanojo-mo-kanojo.fandom.com/wiki/Kiryuu_Shino",
+        descripcion: "La chica inteligente y pragmática que siempre tiene un plan. Con una mirada aguda y una actitud resuelta, es la voz de la razón en medio del caos romántico.",
+        tituloVideo: "Opening - Dramatic ni Koi Shitai",
+        episodio: "https://uqload.to/embed-6uirqboymvt2.html",
+        trailer: "https://www.youtube.com/embed/NDHyMF_jgTQ?si=cntbkgMg-1I7k5_L",
+        db: "https://anidb.net/anime/15851"
+    },
 ];
 
 export { personajesFemeninos };

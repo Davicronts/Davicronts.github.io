@@ -109,7 +109,7 @@ export function iniciarJuego(personajesFemeninos, personajesMasculinos, genero, 
             mostrarPregunta(ronda, puntuacion, preguntaActual, preguntas[preguntaActual], contenedorDatos, contenedorJuego, (esCorrecto) => {
 
                 if (esCorrecto) {
-                    puntuacion++; // Incrementa la puntuación si la respuesta es correcta
+                    puntuacion = puntuacion + 2; // Incrementa la puntuación si la respuesta es correcta
                     alert('¡Respuesta correcta! 👌');
                 } else {
                     puntuacion--; // Decrementa la puntuación si la respuesta es incorrecta
@@ -166,7 +166,7 @@ export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero
         ronda = 1;
         puntuacion = 0;
 
-    } else if (puntuacion >= 20 && puntuacion < 30 && ronda === 3) {
+    } else if (puntuacion >= 20 && puntuacion < 60 && ronda === 3) {
         contenedorJuego.innerHTML = `
         <div id="pantalla-fin">
             <p>Fin del juego, has conseguido ${puntuacion} puntos.</p>
@@ -206,7 +206,7 @@ export function finalizarRonda(personajesFemeninos, personajesMasculinos, genero
     `;
         ronda++;
 
-    } else if (puntuacion === 30 && ronda === 3) {
+    } else if (puntuacion === 60 && ronda === 3) {
         contenedorJuego.innerHTML = `
         <div id="pantalla-fin">
             <p>Fin del juego, has conseguido ${puntuacion} puntos.</p>

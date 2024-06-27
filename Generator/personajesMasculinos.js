@@ -146,7 +146,7 @@ const personajesMasculinos = [
     {
         nombre: "Reg",
         anime: "Made in Abyss",
-        imagen: "media/img/54.jpg",
+        imagen: "media/img/54.jpeg",
         video: "https://v.animethemes.moe/MadeInAbyss-OP1.webm",
         url: "https://madeinabyss.fandom.com/wiki/Reg",
         descripcion: "El robot más adorable y confundido del Abismo. Con brazos extensibles y un cañón láser potente, sufre de amnesia pero nunca pierde su sentido del deber ni su encanto infantil.",
@@ -346,6 +346,114 @@ const personajesMasculinos = [
         episodio: "https://uqload.to/embed-r3xsdxr53v7g.html",
         trailer: "https://www.youtube.com/embed/6vMuWuWlW4I?si=e-cAh8qSGOlwQDs5",
         db: "https://anidb.net/anime/14107"
+    },
+    {
+        nombre: "Naofumi Iwatani",
+        anime: "Tate no Yuusha no Nariagari",
+        imagen: "media/img/83.jpg",
+        video: "https://v.animethemes.moe/ShieldHero-OP2-NCBD1080.webm",
+        url: "https://shield-hero.fandom.com/wiki/Naofumi_Iwatani",
+        descripcion: "El héroe del escudo con la suerte más mala y el corazón más grande. Aunque empezó como el tipo más odiado del reino, demostró que la defensa es la mejor ofensa.",
+        tituloVideo: "Opening - FAITH",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzQ3N21ncHB0YTZsZw==",
+        trailer: "https://www.youtube.com/embed/VKYmpq-V3Rs?si=juZWOS-NbcSI6LYF",
+        db: "https://anidb.net/anime/13246"
+    },
+    {
+        nombre: "Kirigaya Kazuto",
+        anime: "Sword Art Online",
+        imagen: "media/img/90.jpg",
+        video: "https://v.animethemes.moe/SwordArtOnline-OP1.webm",
+        url: "https://swordartonline.fandom.com/wiki/Kirigaya_Kazuto",
+        descripcion: "El espadachín prodigio con un talento para los videojuegos y un corazón de oro. Siempre vestido de negro, es el héroe solitario que acaba formando un harem virtual.",
+        tituloVideo: "Opening - crossing field",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL250MXVobTBkMWg0eg==",
+        trailer: "https://www.youtube.com/embed/aPP_Ut9Wqlg?si=ZGiQPnYb412uekRX",
+        db: "https://anidb.net/anime/8692"
+    },
+    {
+        nombre: "Yuji Itadori",
+        anime: "Jujutsu Kaisen",
+        imagen: "media/img/91.png",
+        video: "https://v.animethemes.moe/JujutsuKaisen-ED1-NCBD1080.webm",
+        url: "https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori",
+        descripcion: "El chico buena onda con la fuerza de un superhéroe y el estómago de acero. Se come un dedo maldito y termina compartiendo cuerpo con un demonio.",
+        tituloVideo: "Ending - LOST IN PARADISE feat. AKLO",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2l0MDJjMjJibDRpNQ==",
+        trailer: "https://www.youtube.com/embed/pkKu9hLT-t8?si=FMvm3zYo_-BT0KxC",
+        db: "https://anidb.net/anime/15275"
+    },
+    {
+        nombre: "Satoru Gojo",
+        anime: "Jujutsu Kaisen",
+        imagen: "media/img/92.jpg",
+        video: "https://v.animethemes.moe/JujutsuKaisenS2-OP1-NCBD1080.webm",
+        url: "https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo",
+        descripcion: "El maestro de jujutsu más fuerte y carismático, con ojos que podrían matar (literalmente) y un sentido del humor travieso. Siempre listo para una pelea y una broma.",
+        tituloVideo: "Opening - Ao no Sumika",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2l0MDJjMjJibDRpNQ==",
+        trailer: "https://www.youtube.com/embed/pkKu9hLT-t8?si=FMvm3zYo_-BT0KxC",
+        db: "https://anidb.net/anime/15275"
+    },
+    {
+        nombre: "Sukuna",
+        anime: "Jujutsu Kaisen",
+        imagen: "media/img/93.webp",
+        video: "https://v.animethemes.moe/JujutsuKaisen-OP1-NCBD1080.webm",
+        url: "https://jujutsu-kaisen.fandom.com/wiki/Sukuna",
+        descripcion: "El rey de las maldiciones y el peor compañero de cuarto que podrías tener. Poderoso, malévolo y con un ego del tamaño de su maldad.",
+        tituloVideo: "Opening - Kaikai Kitan",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2l0MDJjMjJibDRpNQ==",
+        trailer: "https://www.youtube.com/embed/pkKu9hLT-t8?si=FMvm3zYo_-BT0KxC",
+        db: "https://anidb.net/anime/15275"
+    },
+    {
+        nombre: "Wakana Gojo",
+        anime: "Sono Bisque Doll wa Koi o Suru",
+        imagen: "media/img/96.jpg",
+        video: "https://v.animethemes.moe/BisqueDoll-ED1-NCBD1080.webm",
+        url: "https://sono-bisque-doll-wa-koi-wo-suru.fandom.com/wiki/Wakana_Gojo",
+        descripcion: "El tímido y talentoso artesano de muñecas, con un don para la costura y un amor por el detalle. Aunque reservado, encuentra su chispa al colaborar con Marin en sus cosplays.",
+        tituloVideo: "Ending - Koi no Yukue",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzI1bnJmcWFrb244eA==",
+        trailer: "https://www.youtube.com/embed/8oveGY6h6T8?si=FCoyYgeU4R7PadM1",
+        db: "https://anidb.net/anime/16250"
+    },
+    {
+        nombre: "Aijou Rentarou",
+        anime: "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo",
+        imagen: "media/img/98.webp",
+        video: "https://v.animethemes.moe/Hyakkano-OP1.webm",
+        url: "https://100kanojo.fandom.com/wiki/Aijou_Rentarou",
+        descripcion: "El chico con el corazón más grande y el harem más grande. Con una dedicación infinita, se las arregla para ser el novio perfecto para 100 chicas.",
+        tituloVideo: "Opening - Daidaidaidaidaisuki na Kimi e♡",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL29vNjdhODV1cG1oMA==",
+        trailer: "https://www.youtube.com/embed/ls2VNcSifi4?si=953ZA7sDSmbQtoYs",
+        db: "https://anidb.net/anime/17906"
+    },
+    {
+        nombre: "Mash Burnedead",
+        anime: "Mashle",
+        imagen: "media/img/99.jpg",
+        video: "https://v.animethemes.moe/MashleS2-OP1.webm",
+        url: "https://mashle.fandom.com/wiki/Mash_Burnedead",
+        descripcion: "El chico sin magia en un mundo mágico, pero con músculos que desafían la lógica. Resuelve problemas a puñetazos y come más crema que un pastel.",
+        tituloVideo: "Opening - Bling-Bang-Bang-Born",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lLzVncjdwb21nNjhtOA==",
+        trailer: "https://www.youtube.com/embed/zl0Kiv0kuQQ?si=PnMI78mP0S-g-x6j",
+        db: "https://anidb.net/anime/17478"
+    },
+    {
+        nombre: "Anos Voldigoad",
+        anime: "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei Shite Shison-tachi no Gakkou e Kayou",
+        imagen: "media/img/100.jpg",
+        video: "https://v.animethemes.moe/MaouGakuinNoFutekigousha-OP1-NCBD1080.webm",
+        url: "https://maou-gakuin.fandom.com/wiki/Anos_Voldigoad",
+        descripcion: "El Rey Demonio reencarnado que puede vencer a cualquier enemigo con un chasquido. Arrogante pero encantador, siempre tiene una solución exageradamente poderosa para cada problema.",
+        tituloVideo: "Opening - Seikai Fuseikai",
+        episodio: "https://monoschinos2.com/reproductor?url=aHR0cHM6Ly9maWxlbW9vbi5zeC9lL2hidGhmMnFieDh3bQ==",
+        trailer: "https://www.youtube.com/embed/9qJyDlZst8c?si=blb1RbjBl-vMX3Dv",
+        db: "https://anidb.net/anime/15131"
     },
 ];
 
